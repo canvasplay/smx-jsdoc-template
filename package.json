@@ -1,6 +1,10 @@
 {
   "name": "smx-jsdoc-template",
   "version": "1.0.0",
+  "author": {
+    "name": "canvasplay",
+    "email": "canvasplay1@gmail.com"
+  },
   "description": "jsdoc template created for smx framework",
   "repository": {
     "type": "git",
@@ -16,6 +20,5 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "canvasplay <canvasplay1@gmail.com>",
   "license": "MIT"
 }
