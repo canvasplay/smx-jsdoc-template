@@ -501,23 +501,28 @@ h3.subsection-title {
 }
 
 h3.subsection-title span,
-h4.name span {
+h3.subsection-title a,
+h4.name span,
+h4.name a{
     display: inline-block;
     vertical-align: middle;
 }
 
-.permalink {
-    text-decoration: none;
-    display: inline-block;
-    line-height: 1;
-    vertical-align: middle;
-    margin: 0 -.2rem 0 -1rem;
-    position: relative;
+a.permalink {
+  text-decoration: none;
+  display: inline-block;
+  line-height: 1;
+  vertical-align: middle;
+  margin: 0 -.2rem 0 -1rem;
+  position: relative;
+  font-weight: normal;
+  opacity: .5;
 }
 
-.permalink i {
-    vertical-align: middle;
+a.permalink:hover{
+  opacity: 1;
 }
+
 
 h3.subsection-title .permalink,
 h4.name .permalink {
