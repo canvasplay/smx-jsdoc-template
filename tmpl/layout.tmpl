@@ -4,7 +4,7 @@
 
   <meta charset="utf-8">
 
-  <title>JSDoc: <?js= title ?></title>
+  <title>JSDoc: <?js= (type)? type+'-' : '' ?><?js= title ?></title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -29,7 +29,12 @@
 
 <div id="main">
 
-    <h1 class="page-title"><?js= title ?></h1>
+    <h1 class="page-title">
+      <?js if(type){ ?>
+        <small><?js= type ?></small>
+      <?js } ?>
+      <?js= title ?>
+    </h1>
 
     <?js= content ?>
 </div>
