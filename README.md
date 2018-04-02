@@ -21,7 +21,12 @@ jsdoc -c conf.json -R README.md
 
 ### conf.json
 
-You can set options for customizing your documentations. Notice the `"template"` field for setting the path to **smx-jsdoc-template**.
+Customize your docs output under the `templates` object in your jsdoc `conf.json`. Notice the `"template"` field for setting the path to **smx-jsdoc-template**.
+There are also two additional objects for customizing the content on the sidebar navigation menu.
+
+`NavSections` determines wich section the menu will show, and `navRecursion` resolve tree item contents by kind. Only first level items are initially visible, but using the serach form will reveal it if the search matches the items' names.
+
+Bonus tip. The template has some keyboard shortcuts, the `s` key will focus the search input and `ESC` will clear the search.
 
 ```json
 "templates": {
@@ -55,10 +60,44 @@ You can set options for customizing your documentations. Notice the `"template"`
         "lenient": true,
         "destination": "./docs",
         "template": "./node_modules/smx-jsdoc-template"
-    }
+    },
+    "navRecursion": {
+      "global": ["module", "class", "mixin", "member", "function", "event", "typedef"],
+      "namespace": ["member", "function", "event", "typedef"],
+      "module": ["module", "class", "mixin", "member", "function", "event", "typedef"],
+      "class": ["member", "function", "event", "typedef"],
+      "mixin": ["member", "function", "event", "typedef"]
+    },
+    "navSections":[
+      {
+        "id": "index",
+        "title": "Home"
+      },
+      {
+        "id": "tutorials",
+        "title": "Tutorials"
+      },
+      {
+        "id": "namespaces",
+        "title": "Namespaces"
+      },
+      {
+        "id": "classes",
+        "title": "Classes"
+      },
+      {
+        "id": "modules",
+        "title": "Modules"
+      },
+      {
+        "id": "globals",
+        "title": "Global"
+      }
+    ]
+    
 }
 ```
 
 ## License
 
-This project under the MIT License. and this project refered by default template for JSDoc 3.
+This project is under the MIT License. And this project was inspired by by default template for JSDoc 3 and docdash.

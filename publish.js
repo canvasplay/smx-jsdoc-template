@@ -16,7 +16,7 @@ var scopeToPunc = helper.scopeToPunc;
 var hasOwnProp = Object.prototype.hasOwnProperty;
 
 //get template config
-var CONFIG = env && env.conf && env.conf.docplus || {};
+var CONFIG = env && env.conf && env.conf.templates || {};
 
 
 //LINKTO METHODS
