@@ -22,9 +22,9 @@ jsdoc -c conf.json -R README.md
 ### conf.json
 
 Customize your docs output under the `templates` object in your jsdoc `conf.json`. Notice the `"template"` field for setting the path to **smx-jsdoc-template**.
-There are also two additional objects for customizing the content on the sidebar navigation menu.
 
-`NavSections` determines wich section the menu will show, and `navRecursion` resolve tree item contents by kind. Only first level items are initially visible, but using the serach form will reveal it if the search matches the items' names.
+There are also two additional objects for customizing the content on the sidebar navigation menu.
+`NavSections` determines wich section the menu will show, and `navRecursion` resolve tree item contents by kind. Only first level items are initially visible, but using the serach form will reveal them if the search matches the items' names.
 
 Bonus tip. The template has some keyboard shortcuts, the `s` key will focus the search input and `ESC` will clear the search.
 
