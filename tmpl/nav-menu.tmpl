@@ -1,0 +1,17 @@
+<ul>
+
+  <?js nodes.forEach(function(node){ ?>
+  <li class="<?js= node.id ?>">
+    
+    <h3><?js= node.heading ?></h3>
+    <?js if(node.children && node.children.length){ ?>
+    <ul>
+      <?js node.children.forEach(function(c){ ?>
+      <?js= view.partial('nav-item.tmpl',{ node: c, view: view }) ?>
+      <?js }) ?>
+    </ul>
+    <?js } ?>
+  </li>
+  <?js }) ?>
+  
+</ul>

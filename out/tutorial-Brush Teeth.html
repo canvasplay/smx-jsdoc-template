@@ -1,0 +1,1906 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    
+    
+    <title>tutorial: Brush Teeth - Documentation</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <!--<link rel="stylesheet" href="https://cdn.rawgit.com/isagalaev/highlight.js/cf4b46e5/src/styles/default.css">-->
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>-->
+    <!--<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>-->
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/prettify.js"></script>
+
+    <script src="scripts/jsdoc.js"></script>
+    <link type="text/css" rel="stylesheet" href="styles/prettify.css">
+
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc.css">
+
+</head>
+<body class="kind-tutorial">
+
+<div class="nav__overlay" onclick="$('body').removeClass('nav-visible');">
+</div>
+
+<a class="nav__toggle" href="javascript:$('body').toggleClass('nav-visible');">
+  &#x2261;
+</a>
+
+<nav>
+  
+  <form class="search-form">
+    <div class="form-group">
+      <input
+        type="search"
+        id="NavSearchInput"
+        class="form-control form-control-sm"
+        autocomplete="off"
+        placeholder="Search..."
+      />
+    </div>
+  </form>
+
+  <ul>
+
+  
+  <li class="index">
+    
+    <h3><a href="index.html">Home</a></h3>
+    
+  </li>
+  
+  <li class="tutorials">
+    
+    <h3>Tutorials</h3>
+    
+    <ul>
+      
+      <li class="tutorial">
+
+  <a href="tutorial-Brush Teeth.html">Brush Teeth</a>
+  
+  
+
+</li>
+      
+      <li class="tutorial">
+
+  <a href="tutorial-Drive Car.html">Drive Car</a>
+  
+  
+
+</li>
+      
+      <li class="tutorial">
+
+  <a href="tutorial-Fence Test.html">Fence Test</a>
+  
+  
+
+</li>
+      
+    </ul>
+    
+  </li>
+  
+  <li class="classes">
+    
+    <h3>Classes</h3>
+    
+    <ul>
+      
+      <li class="class">
+
+  <a href="base_chains.html">base/chains</a>
+  
+  
+  <ul>
+    
+      <li class="member">
+
+  <a href="base_chains.html#close">close</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="base_chains.html#end">end</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="base_chains.html#open">open</a>
+  
+  
+
+</li>
+    
+  </ul>
+  
+
+</li>
+      
+      <li class="class">
+
+  <a href="base.html">base</a>
+  
+  
+  <ul>
+    
+      <li class="member">
+
+  <a href="base.html#close">close</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="base.html#open">open</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="base.html#addOptions">addOptions</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="base.html#addDefaultOptions">addDefaultOptions</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="base.html#end">end</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="base.html#destroy">destroy</a>
+  
+  
+
+</li>
+    
+  </ul>
+  
+
+</li>
+      
+      <li class="class">
+
+  <a href="module-ink_collector-CollectorBase.html">CollectorBase</a>
+  
+  
+
+</li>
+      
+      <li class="class">
+
+  <a href="module-ink_collector-OCollector.html">OCollector</a>
+  
+  
+  <ul>
+    
+      <li class="member">
+
+  <a href="module-ink_collector-OCollector.html#length">length</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-OCollector.html#every">every</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-OCollector.html#some">some</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-OCollector.html#unique">unique</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-OCollector.html#all">all</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-OCollector.html#any">any</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-OCollector.html#remove">remove</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-OCollector.html#findOneKey">findOneKey</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-OCollector.html#findOne">findOne</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-OCollector.html#findKeys">findKeys</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-OCollector.html#find">find</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-OCollector.html#update">update</a>
+  
+  
+
+</li>
+    
+  </ul>
+  
+
+</li>
+      
+      <li class="class">
+
+  <a href="module-ink_collector-ACollector.html">ACollector</a>
+  
+  
+  <ul>
+    
+      <li class="member">
+
+  <a href="module-ink_collector-ACollector.html#length">length</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-ACollector.html#every">every</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-ACollector.html#some">some</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-ACollector.html#unique">unique</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-ACollector.html#all">all</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-ACollector.html#any">any</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-ACollector.html#remove">remove</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-ACollector.html#findOneKey">findOneKey</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-ACollector.html#findOne">findOne</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-ACollector.html#findKeys">findKeys</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-ACollector.html#find">find</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-ACollector.html#update">update</a>
+  
+  
+
+</li>
+    
+  </ul>
+  
+
+</li>
+      
+      <li class="class">
+
+  <a href="documents_model.html">documents/model</a>
+  
+  
+  <ul>
+    
+      <li class="member">
+
+  <a href="documents_model.html#isNew">isNew</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="documents_model.html#isEmpty">isEmpty</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="documents_model.html#.get">get</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="documents_model.html#.set">set</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="documents_model.html#.any">any</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="documents_model.html#.all">all</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="documents_model.html#.remove">remove</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="documents_model.html#.findOne">findOne</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="documents_model.html#.findOneKey">findOneKey</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="documents_model.html#.findKeys">findKeys</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="documents_model.html#.find">find</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="documents_model.html#.update">update</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="documents_model.html#.some">some</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="documents_model.html#.every">every</a>
+  
+  
+
+</li>
+    
+  </ul>
+  
+
+</li>
+      
+      <li class="class">
+
+  <a href="module-documents_probe.queryOperators.html">queryOperators</a>
+  
+  
+  <ul>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.queryOperators.html#.$eq">$eq</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.queryOperators.html#.$ne">$ne</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.queryOperators.html#.$all">$all</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.queryOperators.html#.$gt">$gt</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.queryOperators.html#.$gte">$gte</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.queryOperators.html#.$lt">$lt</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.queryOperators.html#.$lte">$lte</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.queryOperators.html#.$in">$in</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.queryOperators.html#.$nin">$nin</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.queryOperators.html#.$exists">$exists</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.queryOperators.html#.$mod">$mod</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.queryOperators.html#.$size">$size</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.queryOperators.html#.$regex">$regex</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.queryOperators.html#.$elemMatch">$elemMatch</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.queryOperators.html#.$and">$and</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.queryOperators.html#.$or">$or</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.queryOperators.html#.$nor">$nor</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.queryOperators.html#.$not">$not</a>
+  
+  
+
+</li>
+    
+  </ul>
+  
+
+</li>
+      
+      <li class="class">
+
+  <a href="module-documents_probe.updateOperators.html">updateOperators</a>
+  
+  
+  <ul>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.updateOperators.html#.$inc">$inc</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.updateOperators.html#.$dec">$dec</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.updateOperators.html#.$unset">$unset</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.updateOperators.html#.$pop">$pop</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.updateOperators.html#.$push">$push</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.updateOperators.html#.$pull">$pull</a>
+  
+  
+
+</li>
+    
+  </ul>
+  
+
+</li>
+      
+      <li class="class">
+
+  <a href="module-mixins_signalable-Signal.html">Signal</a>
+  
+  
+  <ul>
+    
+      <li class="function">
+
+  <a href="module-mixins_signalable-Signal.html#on">on</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-mixins_signalable-Signal.html#once">once</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-mixins_signalable-Signal.html#off">off</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-mixins_signalable-Signal.html#has">has</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-mixins_signalable-Signal.html#toString">toString</a>
+  
+  
+
+</li>
+    
+  </ul>
+  
+
+</li>
+      
+      <li class="class">
+
+  <a href="utils_logger.Logger.html">Logger</a>
+  
+  
+  <ul>
+    
+      <li class="function">
+
+  <a href="utils_logger.Logger.html#silent">silent</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="utils_logger.Logger.html#all">all</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="utils_logger.Logger.html#level">level</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="utils_logger.Logger.html#trace">trace</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="utils_logger.Logger.html#debug">debug</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="utils_logger.Logger.html#info">info</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="utils_logger.Logger.html#warn">warn</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="utils_logger.Logger.html#error">error</a>
+  
+  
+
+</li>
+    
+  </ul>
+  
+
+</li>
+      
+    </ul>
+    
+  </li>
+  
+  <li class="modules">
+    
+    <h3>Modules</h3>
+    
+    <ul>
+      
+      <li class="module">
+
+  <a href="module-base_chains.html">base/chains</a>
+  
+  
+
+</li>
+      
+      <li class="module">
+
+  <a href="module-base.html">base</a>
+  
+  
+
+</li>
+      
+      <li class="module">
+
+  <a href="module-documents_binder.html">documents/binder</a>
+  
+  
+  <ul>
+    
+      <li class="function">
+
+  <a href="module-documents_binder.html#.unbind">unbind</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-documents_binder.html#.bind">bind</a>
+  
+  
+
+</li>
+    
+  </ul>
+  
+
+</li>
+      
+      <li class="module">
+
+  <a href="module-ink_collector.html">ink/collector</a>
+  
+  
+  <ul>
+    
+      <li class="class">
+
+  <a href="module-ink_collector-CollectorBase.html">CollectorBase</a>
+  
+  
+
+</li>
+    
+      <li class="class">
+
+  <a href="module-ink_collector-OCollector.html">OCollector</a>
+  
+  
+  <ul>
+    
+      <li class="member">
+
+  <a href="module-ink_collector-OCollector.html#length">length</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-OCollector.html#every">every</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-OCollector.html#some">some</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-OCollector.html#unique">unique</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-OCollector.html#all">all</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-OCollector.html#any">any</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-OCollector.html#remove">remove</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-OCollector.html#findOneKey">findOneKey</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-OCollector.html#findOne">findOne</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-OCollector.html#findKeys">findKeys</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-OCollector.html#find">find</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-OCollector.html#update">update</a>
+  
+  
+
+</li>
+    
+  </ul>
+  
+
+</li>
+    
+      <li class="class">
+
+  <a href="module-ink_collector-ACollector.html">ACollector</a>
+  
+  
+  <ul>
+    
+      <li class="member">
+
+  <a href="module-ink_collector-ACollector.html#length">length</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-ACollector.html#every">every</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-ACollector.html#some">some</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-ACollector.html#unique">unique</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-ACollector.html#all">all</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-ACollector.html#any">any</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-ACollector.html#remove">remove</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-ACollector.html#findOneKey">findOneKey</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-ACollector.html#findOne">findOne</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-ACollector.html#findKeys">findKeys</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-ACollector.html#find">find</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-ACollector.html#update">update</a>
+  
+  
+
+</li>
+    
+  </ul>
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector.html#~add">add</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector.html#~each">each</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector.html#~toArray">toArray</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector.html#~toJSON">toJSON</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector.html#~map">map</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector.html#~reduce">reduce</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector.html#~countBy">countBy</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector.html#~groupBy">groupBy</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector.html#~pluck">pluck</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector.html#~sortBy">sortBy</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector.html#~max">max</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector.html#~min">min</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector.html#~destroy">destroy</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector.html#~key">key</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector.html#~add">add</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector.html#~append">append</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector.html#~push">push</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector.html#~compact">compact</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector.html#~at">at</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector.html#~flatten">flatten</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector.html#~index">index</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector.html#.collect">collect</a>
+  
+  
+
+</li>
+    
+  </ul>
+  
+
+</li>
+      
+      <li class="module">
+
+  <a href="module-documents_model.html">documents/model</a>
+  
+  
+
+</li>
+      
+      <li class="module">
+
+  <a href="module-documents_probe.html">documents/probe</a>
+  
+  
+  <ul>
+    
+      <li class="class">
+
+  <a href="module-documents_probe.queryOperators.html">queryOperators</a>
+  
+  
+  <ul>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.queryOperators.html#.$eq">$eq</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.queryOperators.html#.$ne">$ne</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.queryOperators.html#.$all">$all</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.queryOperators.html#.$gt">$gt</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.queryOperators.html#.$gte">$gte</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.queryOperators.html#.$lt">$lt</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.queryOperators.html#.$lte">$lte</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.queryOperators.html#.$in">$in</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.queryOperators.html#.$nin">$nin</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.queryOperators.html#.$exists">$exists</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.queryOperators.html#.$mod">$mod</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.queryOperators.html#.$size">$size</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.queryOperators.html#.$regex">$regex</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.queryOperators.html#.$elemMatch">$elemMatch</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.queryOperators.html#.$and">$and</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.queryOperators.html#.$or">$or</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.queryOperators.html#.$nor">$nor</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.queryOperators.html#.$not">$not</a>
+  
+  
+
+</li>
+    
+  </ul>
+  
+
+</li>
+    
+      <li class="class">
+
+  <a href="module-documents_probe.updateOperators.html">updateOperators</a>
+  
+  
+  <ul>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.updateOperators.html#.$inc">$inc</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.updateOperators.html#.$dec">$dec</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.updateOperators.html#.$unset">$unset</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.updateOperators.html#.$pop">$pop</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.updateOperators.html#.$push">$push</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.updateOperators.html#.$pull">$pull</a>
+  
+  
+
+</li>
+    
+  </ul>
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.html#.delimiter">delimiter</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-documents_probe.html#.update">update</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-documents_probe.html#.find">find</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-documents_probe.html#.findKeys">findKeys</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-documents_probe.html#.findOne">findOne</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-documents_probe.html#.findOneKey">findOneKey</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-documents_probe.html#.remove">remove</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-documents_probe.html#.all">all</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-documents_probe.html#.any">any</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-documents_probe.html#.unique">unique</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-documents_probe.html#.set">set</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-documents_probe.html#.get">get</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-documents_probe.html#.some">some</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-documents_probe.html#.every">every</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-documents_probe.html#.proxy">proxy</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-documents_probe.html#.mixin">mixin</a>
+  
+  
+
+</li>
+    
+  </ul>
+  
+
+</li>
+      
+      <li class="module">
+
+  <a href="module-documents_schema.html">documents/schema</a>
+  
+  
+
+</li>
+      
+      <li class="module">
+
+  <a href="module-mixins_bussable.html">mixins/bussable</a>
+  
+  
+
+</li>
+      
+      <li class="module">
+
+  <a href="module-mixins_signalable.html">mixins/signalable</a>
+  
+  
+  <ul>
+    
+      <li class="class">
+
+  <a href="module-mixins_signalable-Signal.html">Signal</a>
+  
+  
+  <ul>
+    
+      <li class="function">
+
+  <a href="module-mixins_signalable-Signal.html#on">on</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-mixins_signalable-Signal.html#once">once</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-mixins_signalable-Signal.html#off">off</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-mixins_signalable-Signal.html#has">has</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-mixins_signalable-Signal.html#toString">toString</a>
+  
+  
+
+</li>
+    
+  </ul>
+  
+
+</li>
+    
+      <li class="typedef">
+
+  <a href="module-mixins_signalable.html#.SignalOptions">SignalOptions</a>
+  
+  
+
+</li>
+    
+  </ul>
+  
+
+</li>
+      
+      <li class="module">
+
+  <a href="module-strings_format.html">strings/format</a>
+  
+  
+
+</li>
+      
+      <li class="module">
+
+  <a href="module-utils_logger.html">utils/logger</a>
+  
+  
+  <ul>
+    
+      <li class="member">
+
+  <a href="module-utils_logger.html#.utils/logger">utils/logger</a>
+  
+  
+
+</li>
+    
+  </ul>
+  
+
+</li>
+      
+    </ul>
+    
+  </li>
+  
+  
+</ul>
+  
+  <footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+  </footer>
+
+</nav>
+
+<article>
+
+  
+    <header>
+  
+  <h1 class="article__title">
+    <small>tutorial</small>
+    Brush Teeth
+  </h1>
+  
+  
+
+</header>
+
+<section class="article__content">
+    <h2>Lorem ipsum dolor sit amet</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra, tellus et fermentum tincidunt, massa ligula dignissim augue, ut aliquam tortor odio in odio. In faucibus metus metus. Curabitur est mi, fermentum lacinia tincidunt vitae, mattis sit amet neque. Quisque diam nisl, accumsan ac porta tincidunt, iaculis facilisis ipsum. Nulla facilisi. Aenean a metus tortor. Pellentesque congue, mauris vitae viverra varius, elit nunc dictum nisl, rhoncus ultrices nulla sapien at leo. Duis ultricies porttitor diam. Nulla facilisi. Nullam elementum, lorem eu imperdiet laoreet, est turpis sollicitudin velit, in porttitor justo dolor vel urna. Mauris in ante magna. Curabitur vitae lacus in magna mollis commodo.</p>
+<table>
+<thead>
+<tr>
+<th>Fusce lacinia</th>
+<th>mauris ac aliquam</th>
+<th>consequat</th>
+<th>lacus urna feugiat erat</th>
+<th>id viverra mi mi sit amet tortor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Etiam ac</td>
+<td>1</td>
+<td>3</td>
+<td>4.5</td>
+<td>6.78910</td>
+</tr>
+<tr>
+<td>Pellentesque</td>
+<td>2</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+</tr>
+</tbody>
+</table>
+<p>neque lacus, quis posuere orci. Fusce molestie blandit velit, sit amet dictum eros pharetra vitae. In erat urna, condimentum ac feugiat id, rutrum et nisi. Cras ac velit lorem. Nulla facilisi. Maecenas dignissim nulla in turpis tempus sed rhoncus augue dapibus. Nulla feugiat, urna non sagittis laoreet, dolor metus rhoncus justo, sed semper ante lacus eget quam. Sed ac ligula magna. Sed tincidunt pulvinar neque in porta. Nullam quis lacus orci. Pellentesque ornare viverra lacus, id aliquam magna venenatis a.</p>
+<h2>Sed id tristique lorem</h2><p>Ut sodales turpis nec mauris gravida interdum. Cras pellentesque, purus at suscipit euismod, elit nunc cursus nisi, ut venenatis metus sapien id velit. Sed lectus orci, pharetra non pulvinar vel, ullamcorper id lorem. Donec vulputate tincidunt ipsum, ut lacinia tortor sollicitudin id. Nunc nec nibh ut felis venenatis egestas. Proin risus mauris, eleifend eget interdum in, venenatis sed velit. Praesent sodales elit ut odio viverra posuere. Donec sapien lorem, molestie in egestas eget, vulputate sed orci. Aenean elit sapien, pellentesque vitae tempor sit amet, sagittis et ligula. Mauris aliquam sapien sit amet lacus ultrices rutrum. Curabitur nec dolor sed elit varius dignissim a a lacus. Aliquam ac convallis enim.</p>
+<p>Suspendisse orci massa, hendrerit sagittis lacinia consectetur, sagittis vitae purus. Aliquam id eros diam, eget elementum turpis. Nullam tellus magna, mollis in molestie id, venenatis rhoncus est. Proin id diam justo. Nunc tempus gravida justo at lobortis. Nam vitae venenatis nisi. Donec vel odio massa. Quisque interdum metus sit amet est iaculis tincidunt. Donec bibendum blandit purus, id semper orci aliquam quis. Nam tincidunt dolor eu felis ultricies tempor. Nulla non consectetur erat.</p>
+<h2>Nunc faucibus lacus eget odio ultricies</h2><p>Nec ullamcorper risus pharetra. Nunc nec consequat urna. Curabitur condimentum ante vitae erat tristique vitae gravida quam dapibus. Cras ac justo dui, at faucibus urna. Nunc tristique, velit id feugiat fermentum, dolor enim egestas erat, at vestibulum ante ipsum vel orci. Duis quis ante id justo vehicula eleifend sed et urna. Sed sapien tortor, rutrum id ultrices eu, tincidunt tincidunt mi. Etiam blandit, neque eget interdum dignissim, lacus ante facilisis dolor, non viverra dui lorem vitae nibh. Morbi volutpat augue eget nulla luctus eu aliquam sem facilisis. Pellentesque sollicitudin commodo dolor sit amet vestibulum. Nam dictum posuere quam, in tincidunt erat rutrum eu.</p>
+<p>Etiam nec turpis purus, at lacinia sem. In commodo lacinia euismod. Curabitur tincidunt congue leo, eget iaculis orci volutpat pharetra. Fusce dignissim lacus lacus. Integer consectetur lacus rutrum risus malesuada at consectetur erat rutrum. Sed magna ipsum, fringilla eget auctor non, fringilla nec massa. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum nec tortor id nisi luctus aliquam. Maecenas cursus tincidunt ornare. Nulla a vestibulum odio. Mauris malesuada commodo justo quis mattis. Suspendisse mauris ligula, placerat at egestas in, tincidunt quis nibh. Aliquam ullamcorper elit at augue cursus quis pellentesque purus viverra.</p>
+<p>Nulla ultricies justo ac nisi consectetur posuere. Donec ornare pharetra erat, nec facilisis dui cursus quis. Quisque porttitor porttitor orci, sed facilisis urna facilisis sed. Sed tincidunt adipiscing turpis et hendrerit. Cras posuere orci ut mauris ullamcorper vitae laoreet nisi luctus. In rutrum tristique augue. Nam eleifend dignissim dui.</p>
+<p>Donec viverra egestas tellus non viverra. Aenean est ante, egestas sed scelerisque quis, aliquet sed lacus. Praesent non mauris neque, et adipiscing ante. Vestibulum quis quam vitae ipsum aliquet blandit. Vivamus condimentum euismod orci, in tincidunt justo rutrum faucibus. Phasellus nec lorem arcu. Donec tortor dui, facilisis in rutrum sit amet, pulvinar vitae lacus. Nam sodales sem eu nunc scelerisque vitae ullamcorper dolor facilisis. Duis imperdiet nisi in magna tempor convallis. Fusce at metus augue. Quisque dictum tempus mauris, in mattis ligula dignissim ut.</p>
+<p>Proin sodales, mi at tincidunt ornare, mi dui sagittis velit, sed dictum risus orci eu erat. Sed nunc leo, congue sed rutrum eget, lobortis ac lectus. Etiam non arcu nulla. Vestibulum rutrum dolor pulvinar lorem posuere blandit. Sed quis sapien dui. Nunc sagittis erat commodo quam porta cursus in non erat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin a molestie neque. Aliquam iaculis lacus sed neque hendrerit at dignissim ligula imperdiet. Suspendisse venenatis, lorem at luctus scelerisque, sem purus pellentesque sapien, vitae ornare ipsum quam nec dui. Mauris neque est, interdum nec pulvinar eget, dapibus eleifend tellus. Fusce non lorem tortor. Nullam eget nunc quis felis aliquam consectetur. Aliquam tristique, turpis in feugiat blandit, lectus erat condimentum tortor, non egestas nisl sapien eget nibh.</p>
+<p>Aliquam elit turpis, faucibus et porta et, egestas nec nibh. Sed nisl est, pharetra a eleifend a, pretium ac eros. Sed leo eros, pulvinar vel faucibus dictum, aliquet ut quam. Maecenas et felis non ligula fringilla pretium fringilla sit amet ante. Nam varius imperdiet interdum. Ut non metus mauris, vel volutpat lorem. Nullam sagittis est quis lacus feugiat fringilla. Quisque orci lorem, semper ac accumsan vitae, blandit quis velit. Proin luctus sodales ultrices. Fusce mauris erat, facilisis ut consectetur at, fringilla feugiat orci. Aliquam a nisi a neque interdum suscipit id eget purus. Pellentesque tincidunt justo ut urna posuere non molestie quam auctor.</p>
+</section>
+  
+  
+</article>
+
+<script>prettyPrint();</script>
+<!--<script src="scripts/linenumber.js"></script>-->
+</body>
+</html>

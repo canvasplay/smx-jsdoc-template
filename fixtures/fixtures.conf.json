@@ -1,0 +1,69 @@
+{
+    "tags": {
+        "allowUnknownTags": true
+    },
+    "source": {
+        "include": [
+            "fixtures/",
+            "./README.md"
+        ]
+    },
+    "plugins": ["plugins/markdown"],
+    "opts": {
+        "encoding": "utf8",
+        "template": "./",
+        "destination": "./out/",
+        "recurse": true,
+        "verbose": true,
+        "tutorials": "fixtures/tutorials"
+    },
+    "templates": {
+        "cleverLinks": false,
+        "monospaceLinks": false,
+        "default": {
+            "outputSourceFiles": true,
+            "includeDate": false
+        }
+    },
+    "docdash": {
+        "static": false,
+        "sort": true
+    },
+    "docplus":{
+      "sort": false,
+      "title": "Hola",
+      "navRecursion": {
+        "global": ["module", "class", "mixin", "member", "function", "event", "typedef"],
+        "namespace": ["member", "function", "event", "typedef"],
+        "module": ["module", "class", "mixin", "member", "function", "event", "typedef"],
+        "class": ["member", "function", "event", "typedef"],
+        "mixin": ["member", "function", "event", "typedef"]
+      },
+      "navSections":[
+        {
+          "id": "index",
+          "title": "Home"
+        },
+        {
+          "id": "tutorials",
+          "title": "Tutorials"
+        },
+        {
+          "id": "namespaces",
+          "title": "Namespaces"
+        },
+        {
+          "id": "classes",
+          "title": "Classes"
+        },
+        {
+          "id": "modules",
+          "title": "Modules"
+        },
+        {
+          "id": "globals",
+          "title": "Global"
+        }
+      ]
+    }
+}

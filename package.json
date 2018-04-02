@@ -10,15 +10,28 @@
     "type": "git",
     "url": "git://github.com/canvasplay/smx-jsdoc-template.git"
   },
+  "dependencies": {},
+  "devDependencies": {
+    "autoprefixer": "^8.1.0",
+    "cssnano": "^3.10.0",
+    "jsdoc": "latest",
+    "node-sass": "^4.7.2",
+    "npm-run-all": "^4.1.2",
+    "postcss": "^6.0.21",
+    "postcss-cli": "^5.0.0"
+  },
   "keywords": [
     "jsdoc",
-    "jsdoc3",
     "smx",
     "template"
   ],
   "main": "publish.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "jsdoc": "jsdoc -c fixtures/fixtures.conf.json",
+    "sass": "node-sass --source-map true --output-style compressed static/styles/jsdoc.scss static/styles/jsdoc.css",
+    "postcss": "postcss static/styles/jsdoc.css -u autoprefixer -o static/styles/jsdoc.css --map",
+    "styles": "run-s sass postcss",
+    "build": "run-s styles jsdoc"
   },
   "license": "MIT"
 }

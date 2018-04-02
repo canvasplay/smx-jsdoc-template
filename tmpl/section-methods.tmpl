@@ -1,0 +1,15 @@
+<?js
+var methods = obj;
+var self = this;
+if (methods && methods.length && methods.forEach) {
+?>
+<section class="methods">
+  
+  <?js= self.partial('section__title.tmpl', { id: 'methods',  title: 'Methods' })?>
+  
+  <?js methods.forEach(function(m) { ?>
+    <?js= self.partial('method.tmpl', m) ?>
+  <?js }); ?>
+  
+</section>
+<?js } ?>

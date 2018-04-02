@@ -1,0 +1,5916 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    
+    
+    <title>module: ink/collector - Documentation</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <!--<link rel="stylesheet" href="https://cdn.rawgit.com/isagalaev/highlight.js/cf4b46e5/src/styles/default.css">-->
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>-->
+    <!--<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>-->
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/prettify.js"></script>
+
+    <script src="scripts/jsdoc.js"></script>
+    <link type="text/css" rel="stylesheet" href="styles/prettify.css">
+
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc.css">
+
+</head>
+<body class="kind-module">
+
+<div class="nav__overlay" onclick="$('body').removeClass('nav-visible');">
+</div>
+
+<a class="nav__toggle" href="javascript:$('body').toggleClass('nav-visible');">
+  &#x2261;
+</a>
+
+<nav>
+  
+  <form class="search-form">
+    <div class="form-group">
+      <input
+        type="search"
+        id="NavSearchInput"
+        class="form-control form-control-sm"
+        autocomplete="off"
+        placeholder="Search..."
+      />
+    </div>
+  </form>
+
+  <ul>
+
+  
+  <li class="index">
+    
+    <h3><a href="index.html">Home</a></h3>
+    
+  </li>
+  
+  <li class="tutorials">
+    
+    <h3>Tutorials</h3>
+    
+    <ul>
+      
+      <li class="tutorial">
+
+  <a href="tutorial-Brush Teeth.html">Brush Teeth</a>
+  
+  
+
+</li>
+      
+      <li class="tutorial">
+
+  <a href="tutorial-Drive Car.html">Drive Car</a>
+  
+  
+
+</li>
+      
+      <li class="tutorial">
+
+  <a href="tutorial-Fence Test.html">Fence Test</a>
+  
+  
+
+</li>
+      
+    </ul>
+    
+  </li>
+  
+  <li class="classes">
+    
+    <h3>Classes</h3>
+    
+    <ul>
+      
+      <li class="class">
+
+  <a href="base_chains.html">base/chains</a>
+  
+  
+  <ul>
+    
+      <li class="member">
+
+  <a href="base_chains.html#close">close</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="base_chains.html#end">end</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="base_chains.html#open">open</a>
+  
+  
+
+</li>
+    
+  </ul>
+  
+
+</li>
+      
+      <li class="class">
+
+  <a href="base.html">base</a>
+  
+  
+  <ul>
+    
+      <li class="member">
+
+  <a href="base.html#close">close</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="base.html#open">open</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="base.html#addOptions">addOptions</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="base.html#addDefaultOptions">addDefaultOptions</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="base.html#end">end</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="base.html#destroy">destroy</a>
+  
+  
+
+</li>
+    
+  </ul>
+  
+
+</li>
+      
+      <li class="class">
+
+  <a href="module-ink_collector-CollectorBase.html">CollectorBase</a>
+  
+  
+
+</li>
+      
+      <li class="class">
+
+  <a href="module-ink_collector-OCollector.html">OCollector</a>
+  
+  
+  <ul>
+    
+      <li class="member">
+
+  <a href="module-ink_collector-OCollector.html#length">length</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-OCollector.html#every">every</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-OCollector.html#some">some</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-OCollector.html#unique">unique</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-OCollector.html#all">all</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-OCollector.html#any">any</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-OCollector.html#remove">remove</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-OCollector.html#findOneKey">findOneKey</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-OCollector.html#findOne">findOne</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-OCollector.html#findKeys">findKeys</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-OCollector.html#find">find</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-OCollector.html#update">update</a>
+  
+  
+
+</li>
+    
+  </ul>
+  
+
+</li>
+      
+      <li class="class">
+
+  <a href="module-ink_collector-ACollector.html">ACollector</a>
+  
+  
+  <ul>
+    
+      <li class="member">
+
+  <a href="module-ink_collector-ACollector.html#length">length</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-ACollector.html#every">every</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-ACollector.html#some">some</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-ACollector.html#unique">unique</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-ACollector.html#all">all</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-ACollector.html#any">any</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-ACollector.html#remove">remove</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-ACollector.html#findOneKey">findOneKey</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-ACollector.html#findOne">findOne</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-ACollector.html#findKeys">findKeys</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-ACollector.html#find">find</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-ACollector.html#update">update</a>
+  
+  
+
+</li>
+    
+  </ul>
+  
+
+</li>
+      
+      <li class="class">
+
+  <a href="documents_model.html">documents/model</a>
+  
+  
+  <ul>
+    
+      <li class="member">
+
+  <a href="documents_model.html#isNew">isNew</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="documents_model.html#isEmpty">isEmpty</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="documents_model.html#.get">get</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="documents_model.html#.set">set</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="documents_model.html#.any">any</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="documents_model.html#.all">all</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="documents_model.html#.remove">remove</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="documents_model.html#.findOne">findOne</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="documents_model.html#.findOneKey">findOneKey</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="documents_model.html#.findKeys">findKeys</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="documents_model.html#.find">find</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="documents_model.html#.update">update</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="documents_model.html#.some">some</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="documents_model.html#.every">every</a>
+  
+  
+
+</li>
+    
+  </ul>
+  
+
+</li>
+      
+      <li class="class">
+
+  <a href="module-documents_probe.queryOperators.html">queryOperators</a>
+  
+  
+  <ul>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.queryOperators.html#.$eq">$eq</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.queryOperators.html#.$ne">$ne</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.queryOperators.html#.$all">$all</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.queryOperators.html#.$gt">$gt</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.queryOperators.html#.$gte">$gte</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.queryOperators.html#.$lt">$lt</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.queryOperators.html#.$lte">$lte</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.queryOperators.html#.$in">$in</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.queryOperators.html#.$nin">$nin</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.queryOperators.html#.$exists">$exists</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.queryOperators.html#.$mod">$mod</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.queryOperators.html#.$size">$size</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.queryOperators.html#.$regex">$regex</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.queryOperators.html#.$elemMatch">$elemMatch</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.queryOperators.html#.$and">$and</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.queryOperators.html#.$or">$or</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.queryOperators.html#.$nor">$nor</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.queryOperators.html#.$not">$not</a>
+  
+  
+
+</li>
+    
+  </ul>
+  
+
+</li>
+      
+      <li class="class">
+
+  <a href="module-documents_probe.updateOperators.html">updateOperators</a>
+  
+  
+  <ul>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.updateOperators.html#.$inc">$inc</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.updateOperators.html#.$dec">$dec</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.updateOperators.html#.$unset">$unset</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.updateOperators.html#.$pop">$pop</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.updateOperators.html#.$push">$push</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.updateOperators.html#.$pull">$pull</a>
+  
+  
+
+</li>
+    
+  </ul>
+  
+
+</li>
+      
+      <li class="class">
+
+  <a href="module-mixins_signalable-Signal.html">Signal</a>
+  
+  
+  <ul>
+    
+      <li class="function">
+
+  <a href="module-mixins_signalable-Signal.html#on">on</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-mixins_signalable-Signal.html#once">once</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-mixins_signalable-Signal.html#off">off</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-mixins_signalable-Signal.html#has">has</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-mixins_signalable-Signal.html#toString">toString</a>
+  
+  
+
+</li>
+    
+  </ul>
+  
+
+</li>
+      
+      <li class="class">
+
+  <a href="utils_logger.Logger.html">Logger</a>
+  
+  
+  <ul>
+    
+      <li class="function">
+
+  <a href="utils_logger.Logger.html#silent">silent</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="utils_logger.Logger.html#all">all</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="utils_logger.Logger.html#level">level</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="utils_logger.Logger.html#trace">trace</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="utils_logger.Logger.html#debug">debug</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="utils_logger.Logger.html#info">info</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="utils_logger.Logger.html#warn">warn</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="utils_logger.Logger.html#error">error</a>
+  
+  
+
+</li>
+    
+  </ul>
+  
+
+</li>
+      
+    </ul>
+    
+  </li>
+  
+  <li class="modules">
+    
+    <h3>Modules</h3>
+    
+    <ul>
+      
+      <li class="module">
+
+  <a href="module-base_chains.html">base/chains</a>
+  
+  
+
+</li>
+      
+      <li class="module">
+
+  <a href="module-base.html">base</a>
+  
+  
+
+</li>
+      
+      <li class="module">
+
+  <a href="module-documents_binder.html">documents/binder</a>
+  
+  
+  <ul>
+    
+      <li class="function">
+
+  <a href="module-documents_binder.html#.unbind">unbind</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-documents_binder.html#.bind">bind</a>
+  
+  
+
+</li>
+    
+  </ul>
+  
+
+</li>
+      
+      <li class="module">
+
+  <a href="module-ink_collector.html">ink/collector</a>
+  
+  
+  <ul>
+    
+      <li class="class">
+
+  <a href="module-ink_collector-CollectorBase.html">CollectorBase</a>
+  
+  
+
+</li>
+    
+      <li class="class">
+
+  <a href="module-ink_collector-OCollector.html">OCollector</a>
+  
+  
+  <ul>
+    
+      <li class="member">
+
+  <a href="module-ink_collector-OCollector.html#length">length</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-OCollector.html#every">every</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-OCollector.html#some">some</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-OCollector.html#unique">unique</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-OCollector.html#all">all</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-OCollector.html#any">any</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-OCollector.html#remove">remove</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-OCollector.html#findOneKey">findOneKey</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-OCollector.html#findOne">findOne</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-OCollector.html#findKeys">findKeys</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-OCollector.html#find">find</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-OCollector.html#update">update</a>
+  
+  
+
+</li>
+    
+  </ul>
+  
+
+</li>
+    
+      <li class="class">
+
+  <a href="module-ink_collector-ACollector.html">ACollector</a>
+  
+  
+  <ul>
+    
+      <li class="member">
+
+  <a href="module-ink_collector-ACollector.html#length">length</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-ACollector.html#every">every</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-ACollector.html#some">some</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-ACollector.html#unique">unique</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-ACollector.html#all">all</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-ACollector.html#any">any</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-ACollector.html#remove">remove</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-ACollector.html#findOneKey">findOneKey</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-ACollector.html#findOne">findOne</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-ACollector.html#findKeys">findKeys</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-ACollector.html#find">find</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-ACollector.html#update">update</a>
+  
+  
+
+</li>
+    
+  </ul>
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector.html#~add">add</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector.html#~each">each</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector.html#~toArray">toArray</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector.html#~toJSON">toJSON</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector.html#~map">map</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector.html#~reduce">reduce</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector.html#~countBy">countBy</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector.html#~groupBy">groupBy</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector.html#~pluck">pluck</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector.html#~sortBy">sortBy</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector.html#~max">max</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector.html#~min">min</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector.html#~destroy">destroy</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector.html#~key">key</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector.html#~add">add</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector.html#~append">append</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector.html#~push">push</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector.html#~compact">compact</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector.html#~at">at</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector.html#~flatten">flatten</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector.html#~index">index</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector.html#.collect">collect</a>
+  
+  
+
+</li>
+    
+  </ul>
+  
+
+</li>
+      
+      <li class="module">
+
+  <a href="module-documents_model.html">documents/model</a>
+  
+  
+
+</li>
+      
+      <li class="module">
+
+  <a href="module-documents_probe.html">documents/probe</a>
+  
+  
+  <ul>
+    
+      <li class="class">
+
+  <a href="module-documents_probe.queryOperators.html">queryOperators</a>
+  
+  
+  <ul>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.queryOperators.html#.$eq">$eq</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.queryOperators.html#.$ne">$ne</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.queryOperators.html#.$all">$all</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.queryOperators.html#.$gt">$gt</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.queryOperators.html#.$gte">$gte</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.queryOperators.html#.$lt">$lt</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.queryOperators.html#.$lte">$lte</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.queryOperators.html#.$in">$in</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.queryOperators.html#.$nin">$nin</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.queryOperators.html#.$exists">$exists</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.queryOperators.html#.$mod">$mod</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.queryOperators.html#.$size">$size</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.queryOperators.html#.$regex">$regex</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.queryOperators.html#.$elemMatch">$elemMatch</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.queryOperators.html#.$and">$and</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.queryOperators.html#.$or">$or</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.queryOperators.html#.$nor">$nor</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.queryOperators.html#.$not">$not</a>
+  
+  
+
+</li>
+    
+  </ul>
+  
+
+</li>
+    
+      <li class="class">
+
+  <a href="module-documents_probe.updateOperators.html">updateOperators</a>
+  
+  
+  <ul>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.updateOperators.html#.$inc">$inc</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.updateOperators.html#.$dec">$dec</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.updateOperators.html#.$unset">$unset</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.updateOperators.html#.$pop">$pop</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.updateOperators.html#.$push">$push</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.updateOperators.html#.$pull">$pull</a>
+  
+  
+
+</li>
+    
+  </ul>
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.html#.delimiter">delimiter</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-documents_probe.html#.update">update</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-documents_probe.html#.find">find</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-documents_probe.html#.findKeys">findKeys</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-documents_probe.html#.findOne">findOne</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-documents_probe.html#.findOneKey">findOneKey</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-documents_probe.html#.remove">remove</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-documents_probe.html#.all">all</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-documents_probe.html#.any">any</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-documents_probe.html#.unique">unique</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-documents_probe.html#.set">set</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-documents_probe.html#.get">get</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-documents_probe.html#.some">some</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-documents_probe.html#.every">every</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-documents_probe.html#.proxy">proxy</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-documents_probe.html#.mixin">mixin</a>
+  
+  
+
+</li>
+    
+  </ul>
+  
+
+</li>
+      
+      <li class="module">
+
+  <a href="module-documents_schema.html">documents/schema</a>
+  
+  
+
+</li>
+      
+      <li class="module">
+
+  <a href="module-mixins_bussable.html">mixins/bussable</a>
+  
+  
+
+</li>
+      
+      <li class="module">
+
+  <a href="module-mixins_signalable.html">mixins/signalable</a>
+  
+  
+  <ul>
+    
+      <li class="class">
+
+  <a href="module-mixins_signalable-Signal.html">Signal</a>
+  
+  
+  <ul>
+    
+      <li class="function">
+
+  <a href="module-mixins_signalable-Signal.html#on">on</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-mixins_signalable-Signal.html#once">once</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-mixins_signalable-Signal.html#off">off</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-mixins_signalable-Signal.html#has">has</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-mixins_signalable-Signal.html#toString">toString</a>
+  
+  
+
+</li>
+    
+  </ul>
+  
+
+</li>
+    
+      <li class="typedef">
+
+  <a href="module-mixins_signalable.html#.SignalOptions">SignalOptions</a>
+  
+  
+
+</li>
+    
+  </ul>
+  
+
+</li>
+      
+      <li class="module">
+
+  <a href="module-strings_format.html">strings/format</a>
+  
+  
+
+</li>
+      
+      <li class="module">
+
+  <a href="module-utils_logger.html">utils/logger</a>
+  
+  
+  <ul>
+    
+      <li class="member">
+
+  <a href="module-utils_logger.html#.utils/logger">utils/logger</a>
+  
+  
+
+</li>
+    
+  </ul>
+  
+
+</li>
+      
+    </ul>
+    
+  </li>
+  
+  
+</ul>
+  
+  <footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+  </footer>
+
+</nav>
+
+<article>
+
+  
+    
+
+<!--LONGNAME: module:ink/collector-->
+<a id="top">Top</a>
+<header>
+  <h1 class="article__title">
+    <small>module</small>
+    ink/collector
+  </h1>
+
+  
+  
+
+  
+
+  <div class="details-mini">
+    
+
+<div class="source-links">
+  source: <a href="documents_collector.js.html">documents/collector.js</a>, <a href="documents_collector.js.html#line2">line 2</a>
+</div>
+
+  </div>
+  
+  
+    <div class="description"><p>An object and array collector</p></div>
+  
+
+  
+
+
+
+
+</header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="big-members">
+  
+<section class="classes">
+  
+  <h3 class="section-title" id="classes">
+  Classes
+</h3>
+    
+  <ul>
+
+    
+      <li><a href="module-ink_collector-CollectorBase.html">CollectorBase</a></li>
+    
+
+  
+
+    
+      <li><a href="module-ink_collector-OCollector.html">OCollector</a></li>
+    
+
+  
+
+    
+      <li><a href="module-ink_collector-ACollector.html">ACollector</a></li>
+    
+
+  </ul>
+  
+</section>
+
+  
+  
+  
+</div>
+
+
+
+
+
+
+<section class="methods">
+  
+  <h3 class="section-title" id="methods">
+  Methods
+</h3>
+  
+  
+    
+<!--LONGNAME: module:ink/collector~add-->
+<div class="method  --is-inner">
+
+  
+  
+      <h4 class="signature" id="~add">
+        <a class="permalink" href="#~add"></a>
+        <span class="signature__name">add</span><!--
+        --><span class="signature__params"><span class="par">(</span>key, item<span class="par">)</span></span><span class="signature__returns"></span>
+        <!--<span class="signature__attribs">(inner) </span>-->
+      </h4>
+      
+      
+      
+  
+  
+  <div class="details-mini">
+    
+
+  <div class="attribs-list">
+    <ul>
+        <li class="attrib-inner">inner</li>
+    </ul>
+  </div>
+
+
+    
+
+<div class="source-links">
+  source: <a href="documents_collector.js.html">documents/collector.js</a>, <a href="documents_collector.js.html#line56">line 56</a>
+</div>
+
+  </div>
+  
+  
+  <div class="description">
+      <p>Adds an item to the collection</p>
+  </div>
+  
+
+  
+
+  
+  
+  
+  
+  
+      <h5>Parameters</h5>
+      
+
+
+<div class="params">
+<ul>
+
+
+    <li>
+      
+      <span class="name">
+      <code><!--
+      
+      
+      -->key<!--
+      
+      
+      --></code>
+      </span>
+      
+      
+      <span class="type">
+      <code><!--
+        -->
+{*}<!--
+      --></code>
+      </span>
+      
+      
+      
+      <span class="description">: <p>The key to use for the item being added.</p></span>
+      
+      
+      
+      
+    </li>
+
+
+
+    <li>
+      
+      <span class="name">
+      <code><!--
+      
+      
+      -->item<!--
+      
+      
+      --></code>
+      </span>
+      
+      
+      <span class="type">
+      <code><!--
+        -->
+{*}<!--
+      --></code>
+      </span>
+      
+      
+      
+      <span class="description">: <p>The item to add to the collection. The item is not iterated so that you could add bundled items to the collection</p></span>
+      
+      
+      
+      
+    </li>
+
+
+</ul>
+</div>
+
+  
+  
+  
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <!--
+  
+  -->
+  
+
+  
+  
+    
+
+
+
+  
+
+  
+  
+
+
+</div>
+  
+    
+<!--LONGNAME: module:ink/collector~each-->
+<div class="method  --is-inner">
+
+  
+  
+      <h4 class="signature" id="~each">
+        <a class="permalink" href="#~each"></a>
+        <span class="signature__name">each</span><!--
+        --><span class="signature__params"><span class="par">(</span>[query], iterator, [thisobj]<span class="par">)</span></span><span class="signature__returns"></span>
+        <!--<span class="signature__attribs">(inner) </span>-->
+      </h4>
+      
+      
+      
+  
+  
+  <div class="details-mini">
+    
+
+  <div class="attribs-list">
+    <ul>
+        <li class="attrib-inner">inner</li>
+    </ul>
+  </div>
+
+
+    
+
+<div class="source-links">
+  source: <a href="documents_collector.js.html">documents/collector.js</a>, <a href="documents_collector.js.html#line67">line 67</a>
+</div>
+
+  </div>
+  
+  
+  <div class="description">
+      <p>Iterate over each item in the collection, or a subset that matches a query. This supports two signatures:
+<code>.each(query, function)</code> and <code>.each(function)</code>. If you pass in a query, only the items that match the query
+are iterated over.</p>
+  </div>
+  
+
+  
+
+  
+  
+  
+  
+  
+      <h5>Parameters</h5>
+      
+
+
+<div class="params">
+<ul>
+
+
+    <li>
+      
+      <span class="name">
+      <code><!--
+      
+      -->[<!--
+      -->query<!--
+      
+      -->]<!--
+      --></code>
+      </span>
+      
+      
+      <span class="type">
+      <code><!--
+        -->
+{object}<!--
+      --></code>
+      </span>
+      
+      
+      
+      <span class="description">: <p>A query to evaluate</p></span>
+      
+      
+      
+      
+    </li>
+
+
+
+    <li>
+      
+      <span class="name">
+      <code><!--
+      
+      
+      -->iterator<!--
+      
+      
+      --></code>
+      </span>
+      
+      
+      <span class="type">
+      <code><!--
+        -->
+{function}<!--
+      --></code>
+      </span>
+      
+      
+      
+      <span class="description">: <p>Function to execute against each item in the collection</p></span>
+      
+      
+      
+      
+    </li>
+
+
+
+    <li>
+      
+      <span class="name">
+      <code><!--
+      
+      -->[<!--
+      -->thisobj<!--
+      
+      -->]<!--
+      --></code>
+      </span>
+      
+      
+      <span class="type">
+      <code><!--
+        -->
+{object}<!--
+      --></code>
+      </span>
+      
+      
+      
+      <span class="description">: <p>The value of <code>this</code></p></span>
+      
+      
+      
+      
+    </li>
+
+
+</ul>
+</div>
+
+  
+  
+  
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <!--
+  
+  -->
+  
+
+  
+  
+    
+
+
+
+  
+
+  
+  
+
+
+</div>
+  
+    
+<!--LONGNAME: module:ink/collector~toArray-->
+<div class="method  --is-inner">
+
+  
+  
+      <h4 class="signature" id="~toArray">
+        <a class="permalink" href="#~toArray"></a>
+        <span class="signature__name">toArray</span><!--
+        --><span class="signature__params"><span class="par">(</span><span class="par">)</span></span><span class="signature__returns"> &rarr; {array}</span>
+        <!--<span class="signature__attribs">(inner) </span>-->
+      </h4>
+      
+      
+      
+  
+  
+  <div class="details-mini">
+    
+
+  <div class="attribs-list">
+    <ul>
+        <li class="attrib-inner">inner</li>
+    </ul>
+  </div>
+
+
+    
+
+<div class="source-links">
+  source: <a href="documents_collector.js.html">documents/collector.js</a>, <a href="documents_collector.js.html#line80">line 80</a>
+</div>
+
+  </div>
+  
+  
+  <div class="description">
+      <p>Returns the collection as an array. If it is already an array, it just returns that.</p>
+  </div>
+  
+
+  
+
+  
+  
+  
+  
+  
+  
+  
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <!--
+  
+  
+          
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+{array}
+    </dd>
+</dl>
+
+      
+  -->
+  
+    <h5>Returns</h5>
+    
+
+
+<div class="params">
+<ul>
+
+
+    <li>
+      
+      <span class="name">
+      <code><!--
+      
+      
+      --><!--
+      
+      
+      --></code>
+      </span>
+      
+      
+      <span class="type">
+      <code><!--
+        -->
+{array}<!--
+      --></code>
+      </span>
+      
+      
+      
+      
+      
+      
+    </li>
+
+
+</ul>
+</div>
+
+  
+
+  
+  
+    
+
+
+
+  
+
+  
+  
+
+
+</div>
+  
+    
+<!--LONGNAME: module:ink/collector~toJSON-->
+<div class="method  --is-inner">
+
+  
+  
+      <h4 class="signature" id="~toJSON">
+        <a class="permalink" href="#~toJSON"></a>
+        <span class="signature__name">toJSON</span><!--
+        --><span class="signature__params"><span class="par">(</span><span class="par">)</span></span><span class="signature__returns"> &rarr; {object|Object|array}</span>
+        <!--<span class="signature__attribs">(inner) </span>-->
+      </h4>
+      
+      
+      
+  
+  
+  <div class="details-mini">
+    
+
+  <div class="attribs-list">
+    <ul>
+        <li class="attrib-inner">inner</li>
+    </ul>
+  </div>
+
+
+    
+
+<div class="source-links">
+  source: <a href="documents_collector.js.html">documents/collector.js</a>, <a href="documents_collector.js.html#line88">line 88</a>
+</div>
+
+  </div>
+  
+  
+  <div class="description">
+      <p>Supports conversion to a JSON string or for passing over the wire</p>
+  </div>
+  
+
+  
+
+  
+  
+  
+  
+  
+  
+  
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <!--
+  
+  <ul>
+          <li>
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+{object}
+    </dd>
+</dl>
+</li>
+      
+          <li>
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+{Object|array}
+    </dd>
+</dl>
+</li>
+      </ul>
+  -->
+  
+    <h5>Returns</h5>
+    
+
+
+<div class="params">
+<ul>
+
+
+    <li>
+      
+      <span class="name">
+      <code><!--
+      
+      
+      --><!--
+      
+      
+      --></code>
+      </span>
+      
+      
+      <span class="type">
+      <code><!--
+        -->
+{object}<!--
+      --></code>
+      </span>
+      
+      
+      
+      
+      
+      
+    </li>
+
+
+
+    <li>
+      
+      <span class="name">
+      <code><!--
+      
+      
+      --><!--
+      
+      
+      --></code>
+      </span>
+      
+      
+      <span class="type">
+      <code><!--
+        -->
+{Object|array}<!--
+      --></code>
+      </span>
+      
+      
+      
+      
+      
+      
+    </li>
+
+
+</ul>
+</div>
+
+  
+
+  
+  
+    
+
+
+
+  
+
+  
+  
+
+
+</div>
+  
+    
+<!--LONGNAME: module:ink/collector~map-->
+<div class="method  --is-inner">
+
+  
+  
+      <h4 class="signature" id="~map">
+        <a class="permalink" href="#~map"></a>
+        <span class="signature__name">map</span><!--
+        --><span class="signature__params"><span class="par">(</span>[query], iterator, [thisobj]<span class="par">)</span></span><span class="signature__returns"></span>
+        <!--<span class="signature__attribs">(inner) </span>-->
+      </h4>
+      
+      
+      
+  
+  
+  <div class="details-mini">
+    
+
+  <div class="attribs-list">
+    <ul>
+        <li class="attrib-inner">inner</li>
+    </ul>
+  </div>
+
+
+    
+
+<div class="source-links">
+  source: <a href="documents_collector.js.html">documents/collector.js</a>, <a href="documents_collector.js.html#line99">line 99</a>
+</div>
+
+  </div>
+  
+  
+  <div class="description">
+      <p>Maps the contents to an array by iterating over it and transforming it. You supply the iterator. Supports two signatures:
+<code>.map(query, function)</code> and <code>.map(function)</code>. If you pass in a query, only the items that match the query
+are iterated over.</p>
+  </div>
+  
+
+  
+
+  
+  
+  
+  
+  
+      <h5>Parameters</h5>
+      
+
+
+<div class="params">
+<ul>
+
+
+    <li>
+      
+      <span class="name">
+      <code><!--
+      
+      -->[<!--
+      -->query<!--
+      
+      -->]<!--
+      --></code>
+      </span>
+      
+      
+      <span class="type">
+      <code><!--
+        -->
+{object}<!--
+      --></code>
+      </span>
+      
+      
+      
+      <span class="description">: <p>A query to evaluate</p></span>
+      
+      
+      
+      
+    </li>
+
+
+
+    <li>
+      
+      <span class="name">
+      <code><!--
+      
+      
+      -->iterator<!--
+      
+      
+      --></code>
+      </span>
+      
+      
+      <span class="type">
+      <code><!--
+        -->
+{function}<!--
+      --></code>
+      </span>
+      
+      
+      
+      <span class="description">: <p>Function to execute against each item in the collection</p></span>
+      
+      
+      
+      
+    </li>
+
+
+
+    <li>
+      
+      <span class="name">
+      <code><!--
+      
+      -->[<!--
+      -->thisobj<!--
+      
+      -->]<!--
+      --></code>
+      </span>
+      
+      
+      <span class="type">
+      <code><!--
+        -->
+{object}<!--
+      --></code>
+      </span>
+      
+      
+      
+      <span class="description">: <p>The value of <code>this</code></p></span>
+      
+      
+      
+      
+    </li>
+
+
+</ul>
+</div>
+
+  
+  
+  
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <!--
+  
+  -->
+  
+
+  
+  
+    
+
+
+
+  
+
+  
+  
+
+
+</div>
+  
+    
+<!--LONGNAME: module:ink/collector~reduce-->
+<div class="method  --is-inner">
+
+  
+  
+      <h4 class="signature" id="~reduce">
+        <a class="permalink" href="#~reduce"></a>
+        <span class="signature__name">reduce</span><!--
+        --><span class="signature__params"><span class="par">(</span>[query], iterator, [accumulator], [thisobj]<span class="par">)</span></span><span class="signature__returns"> &rarr; {*}</span>
+        <!--<span class="signature__attribs">(inner) </span>-->
+      </h4>
+      
+      
+      
+  
+  
+  <div class="details-mini">
+    
+
+  <div class="attribs-list">
+    <ul>
+        <li class="attrib-inner">inner</li>
+    </ul>
+  </div>
+
+
+    
+
+<div class="source-links">
+  source: <a href="documents_collector.js.html">documents/collector.js</a>, <a href="documents_collector.js.html#line119">line 119</a>
+</div>
+
+  </div>
+  
+  
+  <div class="description">
+      <p>Reduces a collection to a value which is the accumulated result of running each element in the collection through the
+callback, where each successive callback execution consumes the return value of the previous execution. If accumulator
+is not passed, the first element of the collection will be used as the initial accumulator value.
+are iterated over.</p>
+  </div>
+  
+
+  
+
+  
+  
+  
+  
+  
+      <h5>Parameters</h5>
+      
+
+
+<div class="params">
+<ul>
+
+
+    <li>
+      
+      <span class="name">
+      <code><!--
+      
+      -->[<!--
+      -->query<!--
+      
+      -->]<!--
+      --></code>
+      </span>
+      
+      
+      <span class="type">
+      <code><!--
+        -->
+{object}<!--
+      --></code>
+      </span>
+      
+      
+      
+      <span class="description">: <p>A query to evaluate</p></span>
+      
+      
+      
+      
+    </li>
+
+
+
+    <li>
+      
+      <span class="name">
+      <code><!--
+      
+      
+      -->iterator<!--
+      
+      
+      --></code>
+      </span>
+      
+      
+      <span class="type">
+      <code><!--
+        -->
+{function}<!--
+      --></code>
+      </span>
+      
+      
+      
+      <span class="description">: <p>The function that will be executed in each item in the collection</p></span>
+      
+      
+      
+      
+    </li>
+
+
+
+    <li>
+      
+      <span class="name">
+      <code><!--
+      
+      -->[<!--
+      -->accumulator<!--
+      
+      -->]<!--
+      --></code>
+      </span>
+      
+      
+      <span class="type">
+      <code><!--
+        -->
+{*}<!--
+      --></code>
+      </span>
+      
+      
+      
+      <span class="description">: <p>Initial value of the accumulator.</p></span>
+      
+      
+      
+      
+    </li>
+
+
+
+    <li>
+      
+      <span class="name">
+      <code><!--
+      
+      -->[<!--
+      -->thisobj<!--
+      
+      -->]<!--
+      --></code>
+      </span>
+      
+      
+      <span class="type">
+      <code><!--
+        -->
+{object}<!--
+      --></code>
+      </span>
+      
+      
+      
+      <span class="description">: <p>The value of <code>this</code></p></span>
+      
+      
+      
+      
+    </li>
+
+
+</ul>
+</div>
+
+  
+  
+  
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <!--
+  
+  
+          
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+{*}
+    </dd>
+</dl>
+
+      
+  -->
+  
+    <h5>Returns</h5>
+    
+
+
+<div class="params">
+<ul>
+
+
+    <li>
+      
+      <span class="name">
+      <code><!--
+      
+      
+      --><!--
+      
+      
+      --></code>
+      </span>
+      
+      
+      <span class="type">
+      <code><!--
+        -->
+{*}<!--
+      --></code>
+      </span>
+      
+      
+      
+      
+      
+      
+    </li>
+
+
+</ul>
+</div>
+
+  
+
+  
+  
+    
+
+
+
+  
+
+  
+  
+
+
+</div>
+  
+    
+<!--LONGNAME: module:ink/collector~countBy-->
+<div class="method  --is-inner">
+
+  
+  
+      <h4 class="signature" id="~countBy">
+        <a class="permalink" href="#~countBy"></a>
+        <span class="signature__name">countBy</span><!--
+        --><span class="signature__params"><span class="par">(</span>[query], iterator, [thisobj]<span class="par">)</span></span><span class="signature__returns"> &rarr; {object}</span>
+        <!--<span class="signature__attribs">(inner) </span>-->
+      </h4>
+      
+      
+      
+  
+  
+  <div class="details-mini">
+    
+
+  <div class="attribs-list">
+    <ul>
+        <li class="attrib-inner">inner</li>
+    </ul>
+  </div>
+
+
+    
+
+<div class="source-links">
+  source: <a href="documents_collector.js.html">documents/collector.js</a>, <a href="documents_collector.js.html#line138">line 138</a>
+</div>
+
+  </div>
+  
+  
+  <div class="description">
+      <p>Creates an object composed of keys returned from running each element
+of the collection through the given callback. The corresponding value of each key
+is the number of times the key was returned by the callback.</p>
+  </div>
+  
+
+  
+
+  
+  
+  
+  
+  
+      <h5>Parameters</h5>
+      
+
+
+<div class="params">
+<ul>
+
+
+    <li>
+      
+      <span class="name">
+      <code><!--
+      
+      -->[<!--
+      -->query<!--
+      
+      -->]<!--
+      --></code>
+      </span>
+      
+      
+      <span class="type">
+      <code><!--
+        -->
+{object}<!--
+      --></code>
+      </span>
+      
+      
+      
+      <span class="description">: <p>A query to evaluate. If you pass in a query, only the items that match the query
+are iterated over.</p></span>
+      
+      
+      
+      
+    </li>
+
+
+
+    <li>
+      
+      <span class="name">
+      <code><!--
+      
+      
+      -->iterator<!--
+      
+      
+      --></code>
+      </span>
+      
+      
+      <span class="type">
+      <code><!--
+        -->
+{function}<!--
+      --></code>
+      </span>
+      
+      
+      
+      
+      
+      
+    </li>
+
+
+
+    <li>
+      
+      <span class="name">
+      <code><!--
+      
+      -->[<!--
+      -->thisobj<!--
+      
+      -->]<!--
+      --></code>
+      </span>
+      
+      
+      <span class="type">
+      <code><!--
+        -->
+{object}<!--
+      --></code>
+      </span>
+      
+      
+      
+      <span class="description">: <p>The value of <code>this</code></p></span>
+      
+      
+      
+      
+    </li>
+
+
+</ul>
+</div>
+
+  
+  
+  
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <!--
+  
+  
+          
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+{object}
+    </dd>
+</dl>
+
+      
+  -->
+  
+    <h5>Returns</h5>
+    
+
+
+<div class="params">
+<ul>
+
+
+    <li>
+      
+      <span class="name">
+      <code><!--
+      
+      
+      --><!--
+      
+      
+      --></code>
+      </span>
+      
+      
+      <span class="type">
+      <code><!--
+        -->
+{object}<!--
+      --></code>
+      </span>
+      
+      
+      
+      
+      
+      
+    </li>
+
+
+</ul>
+</div>
+
+  
+
+  
+  
+    
+
+
+
+  
+
+  
+  
+
+
+</div>
+  
+    
+<!--LONGNAME: module:ink/collector~groupBy-->
+<div class="method  --is-inner">
+
+  
+  
+      <h4 class="signature" id="~groupBy">
+        <a class="permalink" href="#~groupBy"></a>
+        <span class="signature__name">groupBy</span><!--
+        --><span class="signature__params"><span class="par">(</span>[query], iterator, [thisobj]<span class="par">)</span></span><span class="signature__returns"> &rarr; {object}</span>
+        <!--<span class="signature__attribs">(inner) </span>-->
+      </h4>
+      
+      
+      
+  
+  
+  <div class="details-mini">
+    
+
+  <div class="attribs-list">
+    <ul>
+        <li class="attrib-inner">inner</li>
+    </ul>
+  </div>
+
+
+    
+
+<div class="source-links">
+  source: <a href="documents_collector.js.html">documents/collector.js</a>, <a href="documents_collector.js.html#line157">line 157</a>
+</div>
+
+  </div>
+  
+  
+  <div class="description">
+      <p>Creates an object composed of keys returned from running each element of the collection through the callback.
+The corresponding value of each key is an array of elements passed to callback that returned the key.
+The callback is invoked with three arguments: (value, index|key, collection).</p>
+  </div>
+  
+
+  
+
+  
+  
+  
+  
+  
+      <h5>Parameters</h5>
+      
+
+
+<div class="params">
+<ul>
+
+
+    <li>
+      
+      <span class="name">
+      <code><!--
+      
+      -->[<!--
+      -->query<!--
+      
+      -->]<!--
+      --></code>
+      </span>
+      
+      
+      <span class="type">
+      <code><!--
+        -->
+{object}<!--
+      --></code>
+      </span>
+      
+      
+      
+      <span class="description">: <p>A query to evaluate . If you pass in a query, only the items that match the query
+are iterated over.</p></span>
+      
+      
+      
+      
+    </li>
+
+
+
+    <li>
+      
+      <span class="name">
+      <code><!--
+      
+      
+      -->iterator<!--
+      
+      
+      --></code>
+      </span>
+      
+      
+      <span class="type">
+      <code><!--
+        -->
+{function}<!--
+      --></code>
+      </span>
+      
+      
+      
+      
+      
+      
+    </li>
+
+
+
+    <li>
+      
+      <span class="name">
+      <code><!--
+      
+      -->[<!--
+      -->thisobj<!--
+      
+      -->]<!--
+      --></code>
+      </span>
+      
+      
+      <span class="type">
+      <code><!--
+        -->
+{object}<!--
+      --></code>
+      </span>
+      
+      
+      
+      <span class="description">: <p>The value of <code>this</code></p></span>
+      
+      
+      
+      
+    </li>
+
+
+</ul>
+</div>
+
+  
+  
+  
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <!--
+  
+  
+          
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+{object}
+    </dd>
+</dl>
+
+      
+  -->
+  
+    <h5>Returns</h5>
+    
+
+
+<div class="params">
+<ul>
+
+
+    <li>
+      
+      <span class="name">
+      <code><!--
+      
+      
+      --><!--
+      
+      
+      --></code>
+      </span>
+      
+      
+      <span class="type">
+      <code><!--
+        -->
+{object}<!--
+      --></code>
+      </span>
+      
+      
+      
+      
+      
+      
+    </li>
+
+
+</ul>
+</div>
+
+  
+
+  
+  
+    
+
+
+
+  
+
+  
+  
+
+
+</div>
+  
+    
+<!--LONGNAME: module:ink/collector~pluck-->
+<div class="method  --is-inner">
+
+  
+  
+      <h4 class="signature" id="~pluck">
+        <a class="permalink" href="#~pluck"></a>
+        <span class="signature__name">pluck</span><!--
+        --><span class="signature__params"><span class="par">(</span>[query], property<span class="par">)</span></span><span class="signature__returns"> &rarr; {*}</span>
+        <!--<span class="signature__attribs">(inner) </span>-->
+      </h4>
+      
+      
+      
+  
+  
+  <div class="details-mini">
+    
+
+  <div class="attribs-list">
+    <ul>
+        <li class="attrib-inner">inner</li>
+    </ul>
+  </div>
+
+
+    
+
+<div class="source-links">
+  source: <a href="documents_collector.js.html">documents/collector.js</a>, <a href="documents_collector.js.html#line174">line 174</a>
+</div>
+
+  </div>
+  
+  
+  <div class="description">
+      <p>Reduce the collection to a single value. Supports two signatures:
+<code>.pluck(query, function)</code> and <code>.pluck(function)</code></p>
+  </div>
+  
+
+  
+
+  
+  
+  
+  
+  
+      <h5>Parameters</h5>
+      
+
+
+<div class="params">
+<ul>
+
+
+    <li>
+      
+      <span class="name">
+      <code><!--
+      
+      -->[<!--
+      -->query<!--
+      
+      -->]<!--
+      --></code>
+      </span>
+      
+      
+      <span class="type">
+      <code><!--
+        -->
+{object}<!--
+      --></code>
+      </span>
+      
+      
+      
+      <span class="description">: <p>The query to evaluate. If you pass in a query, only the items that match the query
+are iterated over.</p></span>
+      
+      
+      
+      
+    </li>
+
+
+
+    <li>
+      
+      <span class="name">
+      <code><!--
+      
+      
+      -->property<!--
+      
+      
+      --></code>
+      </span>
+      
+      
+      <span class="type">
+      <code><!--
+        -->
+{string}<!--
+      --></code>
+      </span>
+      
+      
+      
+      <span class="description">: <p>The property that will be 'plucked' from the contents of the collection</p></span>
+      
+      
+      
+      
+    </li>
+
+
+</ul>
+</div>
+
+  
+  
+  
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <!--
+  
+  
+          
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+{*}
+    </dd>
+</dl>
+
+      
+  -->
+  
+    <h5>Returns</h5>
+    
+
+
+<div class="params">
+<ul>
+
+
+    <li>
+      
+      <span class="name">
+      <code><!--
+      
+      
+      --><!--
+      
+      
+      --></code>
+      </span>
+      
+      
+      <span class="type">
+      <code><!--
+        -->
+{*}<!--
+      --></code>
+      </span>
+      
+      
+      
+      
+      
+      
+    </li>
+
+
+</ul>
+</div>
+
+  
+
+  
+  
+    
+
+
+
+  
+
+  
+  
+
+
+</div>
+  
+    
+<!--LONGNAME: module:ink/collector~sortBy-->
+<div class="method  --is-inner">
+
+  
+  
+      <h4 class="signature" id="~sortBy">
+        <a class="permalink" href="#~sortBy"></a>
+        <span class="signature__name">sortBy</span><!--
+        --><span class="signature__params"><span class="par">(</span>[query], iterator, [thisobj]<span class="par">)</span></span><span class="signature__returns"> &rarr; {array}</span>
+        <!--<span class="signature__attribs">(inner) </span>-->
+      </h4>
+      
+      
+      
+  
+  
+  <div class="details-mini">
+    
+
+  <div class="attribs-list">
+    <ul>
+        <li class="attrib-inner">inner</li>
+    </ul>
+  </div>
+
+
+    
+
+<div class="source-links">
+  source: <a href="documents_collector.js.html">documents/collector.js</a>, <a href="documents_collector.js.html#line193">line 193</a>
+</div>
+
+  </div>
+  
+  
+  <div class="description">
+      <p>Returns a sorted copy of the collection.</p>
+  </div>
+  
+
+  
+
+  
+  
+  
+  
+  
+      <h5>Parameters</h5>
+      
+
+
+<div class="params">
+<ul>
+
+
+    <li>
+      
+      <span class="name">
+      <code><!--
+      
+      -->[<!--
+      -->query<!--
+      
+      -->]<!--
+      --></code>
+      </span>
+      
+      
+      <span class="type">
+      <code><!--
+        -->
+{object}<!--
+      --></code>
+      </span>
+      
+      
+      
+      <span class="description">: <p>The query to evaluate. If you pass in a query, only the items that match the query
+are iterated over.</p></span>
+      
+      
+      
+      
+    </li>
+
+
+
+    <li>
+      
+      <span class="name">
+      <code><!--
+      
+      
+      -->iterator<!--
+      
+      
+      --></code>
+      </span>
+      
+      
+      <span class="type">
+      <code><!--
+        -->
+{function}<!--
+      --></code>
+      </span>
+      
+      
+      
+      
+      
+      
+    </li>
+
+
+
+    <li>
+      
+      <span class="name">
+      <code><!--
+      
+      -->[<!--
+      -->thisobj<!--
+      
+      -->]<!--
+      --></code>
+      </span>
+      
+      
+      <span class="type">
+      <code><!--
+        -->
+{object}<!--
+      --></code>
+      </span>
+      
+      
+      
+      <span class="description">: <p>The value of <code>this</code></p></span>
+      
+      
+      
+      
+    </li>
+
+
+</ul>
+</div>
+
+  
+  
+  
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <!--
+  
+  
+          
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+{array}
+    </dd>
+</dl>
+
+      
+  -->
+  
+    <h5>Returns</h5>
+    
+
+
+<div class="params">
+<ul>
+
+
+    <li>
+      
+      <span class="name">
+      <code><!--
+      
+      
+      --><!--
+      
+      
+      --></code>
+      </span>
+      
+      
+      <span class="type">
+      <code><!--
+        -->
+{array}<!--
+      --></code>
+      </span>
+      
+      
+      
+      
+      
+      
+    </li>
+
+
+</ul>
+</div>
+
+  
+
+  
+  
+    
+
+
+
+  
+
+  
+  
+
+
+</div>
+  
+    
+<!--LONGNAME: module:ink/collector~max-->
+<div class="method  --is-inner">
+
+  
+  
+      <h4 class="signature" id="~max">
+        <a class="permalink" href="#~max"></a>
+        <span class="signature__name">max</span><!--
+        --><span class="signature__params"><span class="par">(</span>[query], iterator, [thisobj]<span class="par">)</span></span><span class="signature__returns"> &rarr; {number}</span>
+        <!--<span class="signature__attribs">(inner) </span>-->
+      </h4>
+      
+      
+      
+  
+  
+  <div class="details-mini">
+    
+
+  <div class="attribs-list">
+    <ul>
+        <li class="attrib-inner">inner</li>
+    </ul>
+  </div>
+
+
+    
+
+<div class="source-links">
+  source: <a href="documents_collector.js.html">documents/collector.js</a>, <a href="documents_collector.js.html#line211">line 211</a>
+</div>
+
+  </div>
+  
+  
+  <div class="description">
+      <p>Retrieves the maximum value of an array. If callback is passed,
+it will be executed for each value in the array to generate the criterion by which the value is ranked.</p>
+  </div>
+  
+
+  
+
+  
+  
+  
+  
+  
+      <h5>Parameters</h5>
+      
+
+
+<div class="params">
+<ul>
+
+
+    <li>
+      
+      <span class="name">
+      <code><!--
+      
+      -->[<!--
+      -->query<!--
+      
+      -->]<!--
+      --></code>
+      </span>
+      
+      
+      <span class="type">
+      <code><!--
+        -->
+{object}<!--
+      --></code>
+      </span>
+      
+      
+      
+      <span class="description">: <p>A query to evaluate . If you pass in a query, only the items that match the query
+are iterated over.</p></span>
+      
+      
+      
+      
+    </li>
+
+
+
+    <li>
+      
+      <span class="name">
+      <code><!--
+      
+      
+      -->iterator<!--
+      
+      
+      --></code>
+      </span>
+      
+      
+      <span class="type">
+      <code><!--
+        -->
+{function}<!--
+      --></code>
+      </span>
+      
+      
+      
+      
+      
+      
+    </li>
+
+
+
+    <li>
+      
+      <span class="name">
+      <code><!--
+      
+      -->[<!--
+      -->thisobj<!--
+      
+      -->]<!--
+      --></code>
+      </span>
+      
+      
+      <span class="type">
+      <code><!--
+        -->
+{object}<!--
+      --></code>
+      </span>
+      
+      
+      
+      <span class="description">: <p>The value of <code>this</code></p></span>
+      
+      
+      
+      
+    </li>
+
+
+</ul>
+</div>
+
+  
+  
+  
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <!--
+  
+  
+          
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+{number}
+    </dd>
+</dl>
+
+      
+  -->
+  
+    <h5>Returns</h5>
+    
+
+
+<div class="params">
+<ul>
+
+
+    <li>
+      
+      <span class="name">
+      <code><!--
+      
+      
+      --><!--
+      
+      
+      --></code>
+      </span>
+      
+      
+      <span class="type">
+      <code><!--
+        -->
+{number}<!--
+      --></code>
+      </span>
+      
+      
+      
+      
+      
+      
+    </li>
+
+
+</ul>
+</div>
+
+  
+
+  
+  
+    
+
+
+
+  
+
+  
+  
+
+
+</div>
+  
+    
+<!--LONGNAME: module:ink/collector~min-->
+<div class="method  --is-inner">
+
+  
+  
+      <h4 class="signature" id="~min">
+        <a class="permalink" href="#~min"></a>
+        <span class="signature__name">min</span><!--
+        --><span class="signature__params"><span class="par">(</span>[query], iterator, [thisobj]<span class="par">)</span></span><span class="signature__returns"> &rarr; {number}</span>
+        <!--<span class="signature__attribs">(inner) </span>-->
+      </h4>
+      
+      
+      
+  
+  
+  <div class="details-mini">
+    
+
+  <div class="attribs-list">
+    <ul>
+        <li class="attrib-inner">inner</li>
+    </ul>
+  </div>
+
+
+    
+
+<div class="source-links">
+  source: <a href="documents_collector.js.html">documents/collector.js</a>, <a href="documents_collector.js.html#line229">line 229</a>
+</div>
+
+  </div>
+  
+  
+  <div class="description">
+      <p>Retrieves the minimum value of an array. If callback is passed,
+it will be executed for each value in the array to generate the criterion by which the value is ranked.</p>
+  </div>
+  
+
+  
+
+  
+  
+  
+  
+  
+      <h5>Parameters</h5>
+      
+
+
+<div class="params">
+<ul>
+
+
+    <li>
+      
+      <span class="name">
+      <code><!--
+      
+      -->[<!--
+      -->query<!--
+      
+      -->]<!--
+      --></code>
+      </span>
+      
+      
+      <span class="type">
+      <code><!--
+        -->
+{object}<!--
+      --></code>
+      </span>
+      
+      
+      
+      <span class="description">: <p>A query to evaluate . If you pass in a query, only the items that match the query
+are iterated over.</p></span>
+      
+      
+      
+      
+    </li>
+
+
+
+    <li>
+      
+      <span class="name">
+      <code><!--
+      
+      
+      -->iterator<!--
+      
+      
+      --></code>
+      </span>
+      
+      
+      <span class="type">
+      <code><!--
+        -->
+{function}<!--
+      --></code>
+      </span>
+      
+      
+      
+      
+      
+      
+    </li>
+
+
+
+    <li>
+      
+      <span class="name">
+      <code><!--
+      
+      -->[<!--
+      -->thisobj<!--
+      
+      -->]<!--
+      --></code>
+      </span>
+      
+      
+      <span class="type">
+      <code><!--
+        -->
+{object}<!--
+      --></code>
+      </span>
+      
+      
+      
+      <span class="description">: <p>The value of <code>this</code></p></span>
+      
+      
+      
+      
+    </li>
+
+
+</ul>
+</div>
+
+  
+  
+  
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <!--
+  
+  
+          
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+{number}
+    </dd>
+</dl>
+
+      
+  -->
+  
+    <h5>Returns</h5>
+    
+
+
+<div class="params">
+<ul>
+
+
+    <li>
+      
+      <span class="name">
+      <code><!--
+      
+      
+      --><!--
+      
+      
+      --></code>
+      </span>
+      
+      
+      <span class="type">
+      <code><!--
+        -->
+{number}<!--
+      --></code>
+      </span>
+      
+      
+      
+      
+      
+      
+    </li>
+
+
+</ul>
+</div>
+
+  
+
+  
+  
+    
+
+
+
+  
+
+  
+  
+
+
+</div>
+  
+    
+<!--LONGNAME: module:ink/collector~destroy-->
+<div class="method  --is-inner">
+
+  
+  
+      <h4 class="signature" id="~destroy">
+        <a class="permalink" href="#~destroy"></a>
+        <span class="signature__name">destroy</span><!--
+        --><span class="signature__params"><span class="par">(</span><span class="par">)</span></span><span class="signature__returns"></span>
+        <!--<span class="signature__attribs">(inner) </span>-->
+      </h4>
+      
+      
+      
+  
+  
+  <div class="details-mini">
+    
+
+  <div class="attribs-list">
+    <ul>
+        <li class="attrib-inner">inner</li>
+    </ul>
+  </div>
+
+
+    
+
+<div class="source-links">
+  source: <a href="documents_collector.js.html">documents/collector.js</a>, <a href="documents_collector.js.html#line241">line 241</a>
+</div>
+
+  </div>
+  
+  
+  <div class="description">
+      <p>Destructor called when the object is destroyed.</p>
+  </div>
+  
+
+  
+
+  
+  
+  
+  
+  
+  
+  
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <!--
+  
+  -->
+  
+
+  
+  
+    
+
+
+
+  
+
+  
+  
+
+
+</div>
+  
+    
+<!--LONGNAME: module:ink/collector~key-->
+<div class="method  --is-inner">
+
+  
+  
+      <h4 class="signature" id="~key">
+        <a class="permalink" href="#~key"></a>
+        <span class="signature__name">key</span><!--
+        --><span class="signature__params"><span class="par">(</span>key<span class="par">)</span></span><span class="signature__returns"> &rarr; {*}</span>
+        <!--<span class="signature__attribs">(inner) </span>-->
+      </h4>
+      
+      
+      
+  
+  
+  <div class="details-mini">
+    
+
+  <div class="attribs-list">
+    <ul>
+        <li class="attrib-inner">inner</li>
+    </ul>
+  </div>
+
+
+    
+
+<div class="source-links">
+  source: <a href="documents_collector.js.html">documents/collector.js</a>, <a href="documents_collector.js.html#line257">line 257</a>
+</div>
+
+  </div>
+  
+  
+  <div class="description">
+      <p>Get a record by key</p>
+  </div>
+  
+
+  
+
+  
+  
+  
+  
+  
+      <h5>Parameters</h5>
+      
+
+
+<div class="params">
+<ul>
+
+
+    <li>
+      
+      <span class="name">
+      <code><!--
+      
+      
+      -->key<!--
+      
+      
+      --></code>
+      </span>
+      
+      
+      <span class="type">
+      <code><!--
+        -->
+{*}<!--
+      --></code>
+      </span>
+      
+      
+      
+      <span class="description">: <p>The key of the record to get</p></span>
+      
+      
+      
+      
+    </li>
+
+
+</ul>
+</div>
+
+  
+  
+  
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <!--
+  
+  
+          
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+{*}
+    </dd>
+</dl>
+
+      
+  -->
+  
+    <h5>Returns</h5>
+    
+
+
+<div class="params">
+<ul>
+
+
+    <li>
+      
+      <span class="name">
+      <code><!--
+      
+      
+      --><!--
+      
+      
+      --></code>
+      </span>
+      
+      
+      <span class="type">
+      <code><!--
+        -->
+{*}<!--
+      --></code>
+      </span>
+      
+      
+      
+      
+      
+      
+    </li>
+
+
+</ul>
+</div>
+
+  
+
+  
+  
+    
+
+
+
+  
+
+  
+  
+
+
+</div>
+  
+    
+<!--LONGNAME: module:ink/collector~add-->
+<div class="method  --is-inner">
+
+  
+  
+      <h4 class="signature" id="~add">
+        <a class="permalink" href="#~add"></a>
+        <span class="signature__name">add</span><!--
+        --><span class="signature__params"><span class="par">(</span>item<span class="par">)</span></span><span class="signature__returns"></span>
+        <!--<span class="signature__attribs">(inner) </span>-->
+      </h4>
+      
+      
+      
+  
+  
+  <div class="details-mini">
+    
+
+  <div class="attribs-list">
+    <ul>
+        <li class="attrib-inner">inner</li>
+    </ul>
+  </div>
+
+
+    
+
+<div class="source-links">
+  source: <a href="documents_collector.js.html">documents/collector.js</a>, <a href="documents_collector.js.html#line296">line 296</a>
+</div>
+
+  </div>
+  
+  
+  <div class="description">
+      <p>Adds to the top of the collection</p>
+  </div>
+  
+
+  
+
+  
+  
+  
+  
+  
+      <h5>Parameters</h5>
+      
+
+
+<div class="params">
+<ul>
+
+
+    <li>
+      
+      <span class="name">
+      <code><!--
+      
+      
+      -->item<!--
+      
+      
+      --></code>
+      </span>
+      
+      
+      <span class="type">
+      <code><!--
+        -->
+{*}<!--
+      --></code>
+      </span>
+      
+      
+      
+      <span class="description">: <p>The item to add to the collection. Only one item at a time can be added</p></span>
+      
+      
+      
+      
+    </li>
+
+
+</ul>
+</div>
+
+  
+  
+  
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <!--
+  
+  -->
+  
+
+  
+  
+    
+
+
+
+  
+
+  
+  
+
+
+</div>
+  
+    
+<!--LONGNAME: module:ink/collector~append-->
+<div class="method  --is-inner">
+
+  
+  
+      <h4 class="signature" id="~append">
+        <a class="permalink" href="#~append"></a>
+        <span class="signature__name">append</span><!--
+        --><span class="signature__params"><span class="par">(</span>item<span class="par">)</span></span><span class="signature__returns"></span>
+        <!--<span class="signature__attribs">(inner) </span>-->
+      </h4>
+      
+      
+      
+  
+  
+  <div class="details-mini">
+    
+
+  <div class="attribs-list">
+    <ul>
+        <li class="attrib-inner">inner</li>
+    </ul>
+  </div>
+
+
+    
+
+<div class="source-links">
+  source: <a href="documents_collector.js.html">documents/collector.js</a>, <a href="documents_collector.js.html#line303">line 303</a>
+</div>
+
+  </div>
+  
+  
+  <div class="description">
+      <p>Add to the bottom of the list</p>
+  </div>
+  
+
+  
+
+  
+  
+  
+  
+  
+      <h5>Parameters</h5>
+      
+
+
+<div class="params">
+<ul>
+
+
+    <li>
+      
+      <span class="name">
+      <code><!--
+      
+      
+      -->item<!--
+      
+      
+      --></code>
+      </span>
+      
+      
+      <span class="type">
+      <code><!--
+        -->
+{*}<!--
+      --></code>
+      </span>
+      
+      
+      
+      <span class="description">: <p>The item to add to the collection.  Only one item at a time can be added</p></span>
+      
+      
+      
+      
+    </li>
+
+
+</ul>
+</div>
+
+  
+  
+  
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <!--
+  
+  -->
+  
+
+  
+  
+    
+
+
+
+  
+
+  
+  
+
+
+</div>
+  
+    
+<!--LONGNAME: module:ink/collector~push-->
+<div class="method  --is-inner">
+
+  
+  
+      <h4 class="signature" id="~push">
+        <a class="permalink" href="#~push"></a>
+        <span class="signature__name">push</span><!--
+        --><span class="signature__params"><span class="par">(</span>item<span class="par">)</span></span><span class="signature__returns"></span>
+        <!--<span class="signature__attribs">(inner) </span>-->
+      </h4>
+      
+      
+      
+  
+  
+  <div class="details-mini">
+    
+
+  <div class="attribs-list">
+    <ul>
+        <li class="attrib-inner">inner</li>
+    </ul>
+  </div>
+
+
+    
+
+<div class="source-links">
+  source: <a href="documents_collector.js.html">documents/collector.js</a>, <a href="documents_collector.js.html#line310">line 310</a>
+</div>
+
+  </div>
+  
+  
+  <div class="description">
+      <p>Add an item to the top of the list. This is identical to <code>add</code>, but is provided for stack semantics</p>
+  </div>
+  
+
+  
+
+  
+  
+  
+  
+  
+      <h5>Parameters</h5>
+      
+
+
+<div class="params">
+<ul>
+
+
+    <li>
+      
+      <span class="name">
+      <code><!--
+      
+      
+      -->item<!--
+      
+      
+      --></code>
+      </span>
+      
+      
+      <span class="type">
+      <code><!--
+        -->
+{*}<!--
+      --></code>
+      </span>
+      
+      
+      
+      <span class="description">: <p>The item to add to the collection. Only one item at a time can be added</p></span>
+      
+      
+      
+      
+    </li>
+
+
+</ul>
+</div>
+
+  
+  
+  
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <!--
+  
+  -->
+  
+
+  
+  
+    
+
+
+
+  
+
+  
+  
+
+
+</div>
+  
+    
+<!--LONGNAME: module:ink/collector~compact-->
+<div class="method  --is-inner">
+
+  
+  
+      <h4 class="signature" id="~compact">
+        <a class="permalink" href="#~compact"></a>
+        <span class="signature__name">compact</span><!--
+        --><span class="signature__params"><span class="par">(</span><span class="par">)</span></span><span class="signature__returns"></span>
+        <!--<span class="signature__attribs">(inner) </span>-->
+      </h4>
+      
+      
+      
+  
+  
+  <div class="details-mini">
+    
+
+  <div class="attribs-list">
+    <ul>
+        <li class="attrib-inner">inner</li>
+    </ul>
+  </div>
+
+
+    
+
+<div class="source-links">
+  source: <a href="documents_collector.js.html">documents/collector.js</a>, <a href="documents_collector.js.html#line316">line 316</a>
+</div>
+
+  </div>
+  
+  
+  <div class="description">
+      <p>Modifies the collection with all falsey values of array removed. The values false, null, 0, &quot;&quot;, undefined and NaN are all falsey.</p>
+  </div>
+  
+
+  
+
+  
+  
+  
+  
+  
+  
+  
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <!--
+  
+  -->
+  
+
+  
+  
+    
+
+
+
+  
+
+  
+  
+
+
+</div>
+  
+    
+<!--LONGNAME: module:ink/collector~at-->
+<div class="method  --is-inner">
+
+  
+  
+      <h4 class="signature" id="~at">
+        <a class="permalink" href="#~at"></a>
+        <span class="signature__name">at</span><!--
+        --><span class="signature__params"><span class="par">(</span>args<span class="par">)</span></span><span class="signature__returns"></span>
+        <!--<span class="signature__attribs">(inner) </span>-->
+      </h4>
+      
+      
+      
+  
+  
+  <div class="details-mini">
+    
+
+  <div class="attribs-list">
+    <ul>
+        <li class="attrib-inner">inner</li>
+    </ul>
+  </div>
+
+
+    
+
+<div class="source-links">
+  source: <a href="documents_collector.js.html">documents/collector.js</a>, <a href="documents_collector.js.html#line324">line 324</a>
+</div>
+
+  </div>
+  
+  
+  <div class="description">
+      <p>Creates an array of elements from the specified indexes, or keys, of the collection. Indexes may be specified as
+individual arguments or as arrays of indexes</p>
+  </div>
+  
+
+  
+
+  
+  
+  
+  
+  
+      <h5>Parameters</h5>
+      
+
+
+<div class="params">
+<ul>
+
+
+    <li>
+      
+      <span class="name">
+      <code><!--
+      
+      
+      -->args<!--
+      
+      
+      --></code>
+      </span>
+      
+      
+      <span class="type">
+      <code><!--
+        -->
+{indexes}<!--
+      --></code>
+      </span>
+      
+      
+      
+      <span class="description">: <p>The indexes to use</p></span>
+      
+      
+      
+      
+    </li>
+
+
+</ul>
+</div>
+
+  
+  
+  
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <!--
+  
+  -->
+  
+
+  
+  
+    
+
+
+
+  
+
+  
+  
+
+
+</div>
+  
+    
+<!--LONGNAME: module:ink/collector~flatten-->
+<div class="method  --is-inner">
+
+  
+  
+      <h4 class="signature" id="~flatten">
+        <a class="permalink" href="#~flatten"></a>
+        <span class="signature__name">flatten</span><!--
+        --><span class="signature__params"><span class="par">(</span>[query], iterator,, [thisobj]<span class="par">)</span></span><span class="signature__returns"> &rarr; {number}</span>
+        <!--<span class="signature__attribs">(inner) </span>-->
+      </h4>
+      
+      
+      
+  
+  
+  <div class="details-mini">
+    
+
+  <div class="attribs-list">
+    <ul>
+        <li class="attrib-inner">inner</li>
+    </ul>
+  </div>
+
+
+    
+
+<div class="source-links">
+  source: <a href="documents_collector.js.html">documents/collector.js</a>, <a href="documents_collector.js.html#line338">line 338</a>
+</div>
+
+  </div>
+  
+  
+  <div class="description">
+      <p>Flattens a nested array (the nesting can be to any depth). If isShallow is truthy, array will only be flattened a single level.
+If callback is passed, each element of array is passed through a callback before flattening.</p>
+  </div>
+  
+
+  
+
+  
+  
+  
+  
+  
+      <h5>Parameters</h5>
+      
+
+
+<div class="params">
+<ul>
+
+
+    <li>
+      
+      <span class="name">
+      <code><!--
+      
+      -->[<!--
+      -->query<!--
+      
+      -->]<!--
+      --></code>
+      </span>
+      
+      
+      <span class="type">
+      <code><!--
+        -->
+{object}<!--
+      --></code>
+      </span>
+      
+      
+      
+      <span class="description">: <p>A query to evaluate . If you pass in a query, only the items that match the query
+are iterated over.</p></span>
+      
+      
+      
+      
+    </li>
+
+
+
+    <li>
+      
+      <span class="name">
+      <code><!--
+      
+      
+      -->iterator,<!--
+      
+      
+      --></code>
+      </span>
+      
+      
+      <span class="type">
+      <code><!--
+        -->
+{function}<!--
+      --></code>
+      </span>
+      
+      
+      
+      
+      
+      
+    </li>
+
+
+
+    <li>
+      
+      <span class="name">
+      <code><!--
+      
+      -->[<!--
+      -->thisobj<!--
+      
+      -->]<!--
+      --></code>
+      </span>
+      
+      
+      <span class="type">
+      <code><!--
+        -->
+{object}<!--
+      --></code>
+      </span>
+      
+      
+      
+      <span class="description">: <p>The value of <code>this</code></p></span>
+      
+      
+      
+      
+    </li>
+
+
+</ul>
+</div>
+
+  
+  
+  
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <!--
+  
+  
+          
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+{number}
+    </dd>
+</dl>
+
+      
+  -->
+  
+    <h5>Returns</h5>
+    
+
+
+<div class="params">
+<ul>
+
+
+    <li>
+      
+      <span class="name">
+      <code><!--
+      
+      
+      --><!--
+      
+      
+      --></code>
+      </span>
+      
+      
+      <span class="type">
+      <code><!--
+        -->
+{number}<!--
+      --></code>
+      </span>
+      
+      
+      
+      
+      
+      
+    </li>
+
+
+</ul>
+</div>
+
+  
+
+  
+  
+    
+
+
+
+  
+
+  
+  
+
+
+</div>
+  
+    
+<!--LONGNAME: module:ink/collector~index-->
+<div class="method  --is-inner">
+
+  
+  
+      <h4 class="signature" id="~index">
+        <a class="permalink" href="#~index"></a>
+        <span class="signature__name">index</span><!--
+        --><span class="signature__params"><span class="par">(</span>key<span class="par">)</span></span><span class="signature__returns"> &rarr; {*}</span>
+        <!--<span class="signature__attribs">(inner) </span>-->
+      </h4>
+      
+      
+      
+  
+  
+  <div class="details-mini">
+    
+
+  <div class="attribs-list">
+    <ul>
+        <li class="attrib-inner">inner</li>
+    </ul>
+  </div>
+
+
+    
+
+<div class="source-links">
+  source: <a href="documents_collector.js.html">documents/collector.js</a>, <a href="documents_collector.js.html#line352">line 352</a>
+</div>
+
+  </div>
+  
+  
+  <div class="description">
+      <p>Gets an items by its index</p>
+  </div>
+  
+
+  
+
+  
+  
+  
+  
+  
+      <h5>Parameters</h5>
+      
+
+
+<div class="params">
+<ul>
+
+
+    <li>
+      
+      <span class="name">
+      <code><!--
+      
+      
+      -->key<!--
+      
+      
+      --></code>
+      </span>
+      
+      
+      <span class="type">
+      <code><!--
+        -->
+{number}<!--
+      --></code>
+      </span>
+      
+      
+      
+      <span class="description">: <p>The index to get</p></span>
+      
+      
+      
+      
+    </li>
+
+
+</ul>
+</div>
+
+  
+  
+  
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <!--
+  
+  
+          
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+{*}
+    </dd>
+</dl>
+
+      
+  -->
+  
+    <h5>Returns</h5>
+    
+
+
+<div class="params">
+<ul>
+
+
+    <li>
+      
+      <span class="name">
+      <code><!--
+      
+      
+      --><!--
+      
+      
+      --></code>
+      </span>
+      
+      
+      <span class="type">
+      <code><!--
+        -->
+{*}<!--
+      --></code>
+      </span>
+      
+      
+      
+      
+      
+      
+    </li>
+
+
+</ul>
+</div>
+
+  
+
+  
+  
+    
+
+
+
+  
+
+  
+  
+
+
+</div>
+  
+    
+<!--LONGNAME: module:ink/collector.collect-->
+<div class="method  --is-static">
+
+  
+  
+      <h4 class="signature" id=".collect">
+        <a class="permalink" href="#.collect"></a>
+        <span class="signature__name">collect</span><!--
+        --><span class="signature__params"><span class="par">(</span>obj<span class="par">)</span></span><span class="signature__returns"> &rarr; {ACollector|OCollector}</span>
+        <!--<span class="signature__attribs">(static) </span>-->
+      </h4>
+      
+      
+      
+  
+  
+  <div class="details-mini">
+    
+
+  <div class="attribs-list">
+    <ul>
+        <li class="attrib-static">static</li>
+    </ul>
+  </div>
+
+
+    
+
+<div class="source-links">
+  source: <a href="documents_collector.js.html">documents/collector.js</a>, <a href="documents_collector.js.html#line363">line 363</a>
+</div>
+
+  </div>
+  
+  
+  <div class="description">
+      <p>Collect an object</p>
+  </div>
+  
+
+  
+
+  
+  
+  
+  
+  
+      <h5>Parameters</h5>
+      
+
+
+<div class="params">
+<ul>
+
+
+    <li>
+      
+      <span class="name">
+      <code><!--
+      
+      
+      -->obj<!--
+      
+      
+      --></code>
+      </span>
+      
+      
+      <span class="type">
+      <code><!--
+        -->
+{array|object}<!--
+      --></code>
+      </span>
+      
+      
+      
+      <span class="description">: <p>What to collect</p></span>
+      
+      
+      
+      
+    </li>
+
+
+</ul>
+</div>
+
+  
+  
+  
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <!--
+  
+  
+          
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+{ACollector|OCollector}
+    </dd>
+</dl>
+
+      
+  -->
+  
+    <h5>Returns</h5>
+    
+
+
+<div class="params">
+<ul>
+
+
+    <li>
+      
+      <span class="name">
+      <code><!--
+      
+      
+      --><!--
+      
+      
+      --></code>
+      </span>
+      
+      
+      <span class="type">
+      <code><!--
+        -->
+{ACollector|OCollector}<!--
+      --></code>
+      </span>
+      
+      
+      
+      
+      
+      
+    </li>
+
+
+</ul>
+</div>
+
+  
+
+  
+  
+    
+
+
+
+  
+
+  
+  
+
+
+</div>
+  
+  
+</section>
+
+
+
+
+
+  
+  
+</article>
+
+<script>prettyPrint();</script>
+<!--<script src="scripts/linenumber.js"></script>-->
+</body>
+</html>

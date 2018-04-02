@@ -1,0 +1,13 @@
+<?js
+var data = obj;
+var self = this;
+?>
+<?js if (data.meta && self.outputSourceFiles) {?>
+<div class="source-links">
+  source: <?js= self.linkto(meta.shortpath) ?>, <?js= self.linkto(meta.shortpath, 'line ' + meta.lineno, null, 'line' + meta.lineno) ?>
+</div>
+<?js }else if(data.url) {?>
+<div class="source-links">
+  Full url: ./<?js= data.url ?>
+</div>
+<?js }?>

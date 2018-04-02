@@ -1,0 +1,15 @@
+<?js
+var members = obj;
+var self = this;
+if (members && members.length && members.forEach) {
+?>
+<section class="members">
+  
+  <?js= self.partial('section__title.tmpl', { id: 'members',  title: 'Members' })?>
+  
+  <?js members.forEach(function(p) { ?>
+    <?js= self.partial('member.tmpl', p) ?>
+  <?js }); ?>
+  
+</section>
+<?js } ?>

@@ -1,0 +1,9 @@
+<?js
+var doc = obj;
+var self = this;
+if (doc.kind === 'class'){ ?>
+<section class="constructor">
+  <?js= self.partial('section__title.tmpl', { id: 'constructor',  title: 'Constructor' })?>
+  <?js= self.partial('method.tmpl', doc) ?>
+</section>
+<?js } ?>

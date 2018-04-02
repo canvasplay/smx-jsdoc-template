@@ -1,0 +1,15 @@
+<?js
+var events = obj;
+var self = this;
+if (events && events.length && events.forEach) {
+?>
+<section class="events">
+  
+  <?js= self.partial('section__title.tmpl', { id: 'events',  title: 'Events' })?>
+  
+  <?js events.forEach(function(e) { ?>
+    <?js= self.partial('event.tmpl', e) ?>
+  <?js }); ?>
+  
+</section>
+<?js } ?>

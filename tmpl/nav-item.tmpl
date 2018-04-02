@@ -1,0 +1,13 @@
+<li class="<?js= node.kind ?>">
+
+  <?js= node.link ?>
+  
+  <?js if(node.children && node.children.length){ ?>
+  <ul>
+    <?js node.children.forEach(function(c) { ?>
+      <?js= view.partial('nav-item.tmpl',{node: c, view: view}) ?>
+    <?js }) ?>
+  </ul>
+  <?js } ?>
+
+</li>

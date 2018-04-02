@@ -37,6 +37,9 @@
             props.hasDefault = true;
         }
     });
+
+    props.hasAttributes = false;
+
 ?>
 
 <table class="props">
@@ -52,9 +55,11 @@
         <th>Attributes</th>
         <?js } ?>
 
+        <!--
         <?js if (props.hasDefault) {?>
         <th>Default</th>
         <?js } ?>
+        -->
 
         <th class="last">Description</th>
     </tr>
@@ -69,12 +74,28 @@
 
         <tr>
             <?js if (props.hasName) {?>
-                <td class="name"><code><?js= prop.name ?></code></td>
+                <td class="name">
+
+                  <code>
+                  <?js var isOptional = (prop.optional)? true : false ?>
+                  <?js if(isOptional){ ?>[<?js } ?><!--
+                  --><?js= prop.name ?><!--
+                  <?js if (props.hasDefault) {?>
+                    <?js if (typeof prop.defaultvalue !== 'undefined') { ?>
+                        -->=<?js= self.htmlsafe(prop.defaultvalue) ?><!--
+                    <?js } ?>
+                  <?js } ?>
+                  --><?js if(isOptional){ ?>]<?js } ?>
+                  </code>
+
+                </td>
             <?js } ?>
 
             <td class="type">
             <?js if (prop.type && prop.type.names) {?>
+              <code>
                 <?js= self.partial('type.tmpl', prop.type.names) ?>
+              </code>
             <?js } ?>
             </td>
 
@@ -90,13 +111,15 @@
                 </td>
             <?js } ?>
 
+            <!--
             <?js if (props.hasDefault) {?>
                 <td class="default">
                 <?js if (typeof prop.defaultvalue !== 'undefined') { ?>
-                    <?js= self.htmlsafe(prop.defaultvalue) ?>
+                    <code><?js= self.htmlsafe(prop.defaultvalue) ?></code>
                 <?js } ?>
                 </td>
             <?js } ?>
+            -->
 
             <td class="description last"><?js= prop.description ?><?js if (prop.subprops) { ?>
                 <h6>Properties</h6><?js= self.partial('properties.tmpl', prop) ?>

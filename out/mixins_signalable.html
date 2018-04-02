@@ -1,0 +1,2146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    
+    
+    <title>mixin: mixins/signalable - Documentation</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <!--<link rel="stylesheet" href="https://cdn.rawgit.com/isagalaev/highlight.js/cf4b46e5/src/styles/default.css">-->
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>-->
+    <!--<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>-->
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/prettify.js"></script>
+
+    <script src="scripts/jsdoc.js"></script>
+    <link type="text/css" rel="stylesheet" href="styles/prettify.css">
+
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc.css">
+
+</head>
+<body class="kind-mixin">
+
+<div class="nav__overlay" onclick="$('body').removeClass('nav-visible');">
+</div>
+
+<a class="nav__toggle" href="javascript:$('body').toggleClass('nav-visible');">
+  &#x2261;
+</a>
+
+<nav>
+  
+  <form class="search-form">
+    <div class="form-group">
+      <input
+        type="search"
+        id="NavSearchInput"
+        class="form-control form-control-sm"
+        autocomplete="off"
+        placeholder="Search..."
+      />
+    </div>
+  </form>
+
+  <ul>
+
+  
+  <li class="index">
+    
+    <h3><a href="index.html">Home</a></h3>
+    
+  </li>
+  
+  <li class="tutorials">
+    
+    <h3>Tutorials</h3>
+    
+    <ul>
+      
+      <li class="tutorial">
+
+  <a href="tutorial-Brush Teeth.html">Brush Teeth</a>
+  
+  
+
+</li>
+      
+      <li class="tutorial">
+
+  <a href="tutorial-Drive Car.html">Drive Car</a>
+  
+  
+
+</li>
+      
+      <li class="tutorial">
+
+  <a href="tutorial-Fence Test.html">Fence Test</a>
+  
+  
+
+</li>
+      
+    </ul>
+    
+  </li>
+  
+  <li class="classes">
+    
+    <h3>Classes</h3>
+    
+    <ul>
+      
+      <li class="class">
+
+  <a href="base_chains.html">base/chains</a>
+  
+  
+  <ul>
+    
+      <li class="member">
+
+  <a href="base_chains.html#close">close</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="base_chains.html#end">end</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="base_chains.html#open">open</a>
+  
+  
+
+</li>
+    
+  </ul>
+  
+
+</li>
+      
+      <li class="class">
+
+  <a href="base.html">base</a>
+  
+  
+  <ul>
+    
+      <li class="member">
+
+  <a href="base.html#close">close</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="base.html#open">open</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="base.html#addOptions">addOptions</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="base.html#addDefaultOptions">addDefaultOptions</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="base.html#end">end</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="base.html#destroy">destroy</a>
+  
+  
+
+</li>
+    
+  </ul>
+  
+
+</li>
+      
+      <li class="class">
+
+  <a href="module-ink_collector-CollectorBase.html">CollectorBase</a>
+  
+  
+
+</li>
+      
+      <li class="class">
+
+  <a href="module-ink_collector-OCollector.html">OCollector</a>
+  
+  
+  <ul>
+    
+      <li class="member">
+
+  <a href="module-ink_collector-OCollector.html#length">length</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-OCollector.html#every">every</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-OCollector.html#some">some</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-OCollector.html#unique">unique</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-OCollector.html#all">all</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-OCollector.html#any">any</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-OCollector.html#remove">remove</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-OCollector.html#findOneKey">findOneKey</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-OCollector.html#findOne">findOne</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-OCollector.html#findKeys">findKeys</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-OCollector.html#find">find</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-OCollector.html#update">update</a>
+  
+  
+
+</li>
+    
+  </ul>
+  
+
+</li>
+      
+      <li class="class">
+
+  <a href="module-ink_collector-ACollector.html">ACollector</a>
+  
+  
+  <ul>
+    
+      <li class="member">
+
+  <a href="module-ink_collector-ACollector.html#length">length</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-ACollector.html#every">every</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-ACollector.html#some">some</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-ACollector.html#unique">unique</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-ACollector.html#all">all</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-ACollector.html#any">any</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-ACollector.html#remove">remove</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-ACollector.html#findOneKey">findOneKey</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-ACollector.html#findOne">findOne</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-ACollector.html#findKeys">findKeys</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-ACollector.html#find">find</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-ACollector.html#update">update</a>
+  
+  
+
+</li>
+    
+  </ul>
+  
+
+</li>
+      
+      <li class="class">
+
+  <a href="documents_model.html">documents/model</a>
+  
+  
+  <ul>
+    
+      <li class="member">
+
+  <a href="documents_model.html#isNew">isNew</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="documents_model.html#isEmpty">isEmpty</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="documents_model.html#.get">get</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="documents_model.html#.set">set</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="documents_model.html#.any">any</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="documents_model.html#.all">all</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="documents_model.html#.remove">remove</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="documents_model.html#.findOne">findOne</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="documents_model.html#.findOneKey">findOneKey</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="documents_model.html#.findKeys">findKeys</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="documents_model.html#.find">find</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="documents_model.html#.update">update</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="documents_model.html#.some">some</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="documents_model.html#.every">every</a>
+  
+  
+
+</li>
+    
+  </ul>
+  
+
+</li>
+      
+      <li class="class">
+
+  <a href="module-documents_probe.queryOperators.html">queryOperators</a>
+  
+  
+  <ul>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.queryOperators.html#.$eq">$eq</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.queryOperators.html#.$ne">$ne</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.queryOperators.html#.$all">$all</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.queryOperators.html#.$gt">$gt</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.queryOperators.html#.$gte">$gte</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.queryOperators.html#.$lt">$lt</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.queryOperators.html#.$lte">$lte</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.queryOperators.html#.$in">$in</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.queryOperators.html#.$nin">$nin</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.queryOperators.html#.$exists">$exists</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.queryOperators.html#.$mod">$mod</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.queryOperators.html#.$size">$size</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.queryOperators.html#.$regex">$regex</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.queryOperators.html#.$elemMatch">$elemMatch</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.queryOperators.html#.$and">$and</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.queryOperators.html#.$or">$or</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.queryOperators.html#.$nor">$nor</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.queryOperators.html#.$not">$not</a>
+  
+  
+
+</li>
+    
+  </ul>
+  
+
+</li>
+      
+      <li class="class">
+
+  <a href="module-documents_probe.updateOperators.html">updateOperators</a>
+  
+  
+  <ul>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.updateOperators.html#.$inc">$inc</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.updateOperators.html#.$dec">$dec</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.updateOperators.html#.$unset">$unset</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.updateOperators.html#.$pop">$pop</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.updateOperators.html#.$push">$push</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.updateOperators.html#.$pull">$pull</a>
+  
+  
+
+</li>
+    
+  </ul>
+  
+
+</li>
+      
+      <li class="class">
+
+  <a href="module-mixins_signalable-Signal.html">Signal</a>
+  
+  
+  <ul>
+    
+      <li class="function">
+
+  <a href="module-mixins_signalable-Signal.html#on">on</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-mixins_signalable-Signal.html#once">once</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-mixins_signalable-Signal.html#off">off</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-mixins_signalable-Signal.html#has">has</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-mixins_signalable-Signal.html#toString">toString</a>
+  
+  
+
+</li>
+    
+  </ul>
+  
+
+</li>
+      
+      <li class="class">
+
+  <a href="utils_logger.Logger.html">Logger</a>
+  
+  
+  <ul>
+    
+      <li class="function">
+
+  <a href="utils_logger.Logger.html#silent">silent</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="utils_logger.Logger.html#all">all</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="utils_logger.Logger.html#level">level</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="utils_logger.Logger.html#trace">trace</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="utils_logger.Logger.html#debug">debug</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="utils_logger.Logger.html#info">info</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="utils_logger.Logger.html#warn">warn</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="utils_logger.Logger.html#error">error</a>
+  
+  
+
+</li>
+    
+  </ul>
+  
+
+</li>
+      
+    </ul>
+    
+  </li>
+  
+  <li class="modules">
+    
+    <h3>Modules</h3>
+    
+    <ul>
+      
+      <li class="module">
+
+  <a href="module-base_chains.html">base/chains</a>
+  
+  
+
+</li>
+      
+      <li class="module">
+
+  <a href="module-base.html">base</a>
+  
+  
+
+</li>
+      
+      <li class="module">
+
+  <a href="module-documents_binder.html">documents/binder</a>
+  
+  
+  <ul>
+    
+      <li class="function">
+
+  <a href="module-documents_binder.html#.unbind">unbind</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-documents_binder.html#.bind">bind</a>
+  
+  
+
+</li>
+    
+  </ul>
+  
+
+</li>
+      
+      <li class="module">
+
+  <a href="module-ink_collector.html">ink/collector</a>
+  
+  
+  <ul>
+    
+      <li class="class">
+
+  <a href="module-ink_collector-CollectorBase.html">CollectorBase</a>
+  
+  
+
+</li>
+    
+      <li class="class">
+
+  <a href="module-ink_collector-OCollector.html">OCollector</a>
+  
+  
+  <ul>
+    
+      <li class="member">
+
+  <a href="module-ink_collector-OCollector.html#length">length</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-OCollector.html#every">every</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-OCollector.html#some">some</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-OCollector.html#unique">unique</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-OCollector.html#all">all</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-OCollector.html#any">any</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-OCollector.html#remove">remove</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-OCollector.html#findOneKey">findOneKey</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-OCollector.html#findOne">findOne</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-OCollector.html#findKeys">findKeys</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-OCollector.html#find">find</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-OCollector.html#update">update</a>
+  
+  
+
+</li>
+    
+  </ul>
+  
+
+</li>
+    
+      <li class="class">
+
+  <a href="module-ink_collector-ACollector.html">ACollector</a>
+  
+  
+  <ul>
+    
+      <li class="member">
+
+  <a href="module-ink_collector-ACollector.html#length">length</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-ACollector.html#every">every</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-ACollector.html#some">some</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-ACollector.html#unique">unique</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-ACollector.html#all">all</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-ACollector.html#any">any</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-ACollector.html#remove">remove</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-ACollector.html#findOneKey">findOneKey</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-ACollector.html#findOne">findOne</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-ACollector.html#findKeys">findKeys</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-ACollector.html#find">find</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector-ACollector.html#update">update</a>
+  
+  
+
+</li>
+    
+  </ul>
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector.html#~add">add</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector.html#~each">each</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector.html#~toArray">toArray</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector.html#~toJSON">toJSON</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector.html#~map">map</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector.html#~reduce">reduce</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector.html#~countBy">countBy</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector.html#~groupBy">groupBy</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector.html#~pluck">pluck</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector.html#~sortBy">sortBy</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector.html#~max">max</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector.html#~min">min</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector.html#~destroy">destroy</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector.html#~key">key</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector.html#~add">add</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector.html#~append">append</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector.html#~push">push</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector.html#~compact">compact</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector.html#~at">at</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector.html#~flatten">flatten</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector.html#~index">index</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-ink_collector.html#.collect">collect</a>
+  
+  
+
+</li>
+    
+  </ul>
+  
+
+</li>
+      
+      <li class="module">
+
+  <a href="module-documents_model.html">documents/model</a>
+  
+  
+
+</li>
+      
+      <li class="module">
+
+  <a href="module-documents_probe.html">documents/probe</a>
+  
+  
+  <ul>
+    
+      <li class="class">
+
+  <a href="module-documents_probe.queryOperators.html">queryOperators</a>
+  
+  
+  <ul>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.queryOperators.html#.$eq">$eq</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.queryOperators.html#.$ne">$ne</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.queryOperators.html#.$all">$all</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.queryOperators.html#.$gt">$gt</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.queryOperators.html#.$gte">$gte</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.queryOperators.html#.$lt">$lt</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.queryOperators.html#.$lte">$lte</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.queryOperators.html#.$in">$in</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.queryOperators.html#.$nin">$nin</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.queryOperators.html#.$exists">$exists</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.queryOperators.html#.$mod">$mod</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.queryOperators.html#.$size">$size</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.queryOperators.html#.$regex">$regex</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.queryOperators.html#.$elemMatch">$elemMatch</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.queryOperators.html#.$and">$and</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.queryOperators.html#.$or">$or</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.queryOperators.html#.$nor">$nor</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.queryOperators.html#.$not">$not</a>
+  
+  
+
+</li>
+    
+  </ul>
+  
+
+</li>
+    
+      <li class="class">
+
+  <a href="module-documents_probe.updateOperators.html">updateOperators</a>
+  
+  
+  <ul>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.updateOperators.html#.$inc">$inc</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.updateOperators.html#.$dec">$dec</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.updateOperators.html#.$unset">$unset</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.updateOperators.html#.$pop">$pop</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.updateOperators.html#.$push">$push</a>
+  
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.updateOperators.html#.$pull">$pull</a>
+  
+  
+
+</li>
+    
+  </ul>
+  
+
+</li>
+    
+      <li class="member">
+
+  <a href="module-documents_probe.html#.delimiter">delimiter</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-documents_probe.html#.update">update</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-documents_probe.html#.find">find</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-documents_probe.html#.findKeys">findKeys</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-documents_probe.html#.findOne">findOne</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-documents_probe.html#.findOneKey">findOneKey</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-documents_probe.html#.remove">remove</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-documents_probe.html#.all">all</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-documents_probe.html#.any">any</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-documents_probe.html#.unique">unique</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-documents_probe.html#.set">set</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-documents_probe.html#.get">get</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-documents_probe.html#.some">some</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-documents_probe.html#.every">every</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-documents_probe.html#.proxy">proxy</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-documents_probe.html#.mixin">mixin</a>
+  
+  
+
+</li>
+    
+  </ul>
+  
+
+</li>
+      
+      <li class="module">
+
+  <a href="module-documents_schema.html">documents/schema</a>
+  
+  
+
+</li>
+      
+      <li class="module">
+
+  <a href="module-mixins_bussable.html">mixins/bussable</a>
+  
+  
+
+</li>
+      
+      <li class="module">
+
+  <a href="module-mixins_signalable.html">mixins/signalable</a>
+  
+  
+  <ul>
+    
+      <li class="class">
+
+  <a href="module-mixins_signalable-Signal.html">Signal</a>
+  
+  
+  <ul>
+    
+      <li class="function">
+
+  <a href="module-mixins_signalable-Signal.html#on">on</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-mixins_signalable-Signal.html#once">once</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-mixins_signalable-Signal.html#off">off</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-mixins_signalable-Signal.html#has">has</a>
+  
+  
+
+</li>
+    
+      <li class="function">
+
+  <a href="module-mixins_signalable-Signal.html#toString">toString</a>
+  
+  
+
+</li>
+    
+  </ul>
+  
+
+</li>
+    
+      <li class="typedef">
+
+  <a href="module-mixins_signalable.html#.SignalOptions">SignalOptions</a>
+  
+  
+
+</li>
+    
+  </ul>
+  
+
+</li>
+      
+      <li class="module">
+
+  <a href="module-strings_format.html">strings/format</a>
+  
+  
+
+</li>
+      
+      <li class="module">
+
+  <a href="module-utils_logger.html">utils/logger</a>
+  
+  
+  <ul>
+    
+      <li class="member">
+
+  <a href="module-utils_logger.html#.utils/logger">utils/logger</a>
+  
+  
+
+</li>
+    
+  </ul>
+  
+
+</li>
+      
+    </ul>
+    
+  </li>
+  
+  
+</ul>
+  
+  <footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+  </footer>
+
+</nav>
+
+<article>
+
+  
+    
+
+<!--LONGNAME: mixins/signalable-->
+<a id="top">Top</a>
+<header>
+  <h1 class="article__title">
+    <small>mixin</small>
+    mixins/signalable
+  </h1>
+
+  
+  
+
+  
+
+  <div class="details-mini">
+    
+
+<div class="source-links">
+  source: <a href="mixins_signalable.js.html">mixins/signalable.js</a>, <a href="mixins_signalable.js.html#line153">line 153</a>
+</div>
+
+  </div>
+  
+  
+    <div class="description"><p>Make an object capable of handling a signal. Or many signals.</p></div>
+  
+
+  
+
+
+
+
+</header>
+
+
+
+
+
+
+
+
+<section class="augments">
+  
+  <h3 class="section-title" id="augments">
+  Extends
+</h3>
+    
+  <ul>
+
+    
+      <li><a href="base.html">base</a></li>
+    
+
+  </ul>
+  
+</section>
+
+
+
+
+
+
+
+<div class="big-members">
+  
+  
+  
+  
+</div>
+
+
+
+
+<section class="members">
+  
+  <h3 class="section-title" id="members">
+  Members
+</h3>
+  
+  
+    
+<!--LONGNAME: mixins/signalable#autoLoadSignals-->
+<div class="member ">
+
+  <h4 class="signature" id="autoLoadSignals">
+    <a class="permalink" href="#autoLoadSignals"></a>
+    <span class="signature__name">autoLoadSignals</span><!--
+    --><span class="signature__types">:boolean</span>
+    <!--<span class="signature__attribs"></span>-->
+  </h4>
+
+  
+
+  <div class="details-mini">
+    
+
+
+    
+
+<div class="source-links">
+  source: <a href="mixins_signalable.js.html">mixins/signalable.js</a>, <a href="mixins_signalable.js.html#line230">line 230</a>
+</div>
+
+  </div>
+  
+  
+  <div class="description">
+      <p>When true, the class will load the <code>signals</code> hash and create the signal definitions during construction</p>
+  </div>
+  
+  
+  <!--
+  
+      <h5>Type:</h5>
+      <ul>
+          <li>
+              
+{boolean}
+          </li>
+      </ul>
+  
+  -->
+
+  
+
+
+  
+  
+  
+
+  
+
+
+
+
+</div>
+  
+    
+<!--LONGNAME: mixins/signalable#signals-->
+<div class="member ">
+
+  <h4 class="signature" id="signals">
+    <a class="permalink" href="#signals"></a>
+    <span class="signature__name">signals</span><!--
+    --><span class="signature__types">:hash|function</span>
+    <!--<span class="signature__attribs"></span>-->
+  </h4>
+
+  
+
+  <div class="details-mini">
+    
+
+
+    
+
+<div class="source-links">
+  source: <a href="mixins_signalable.js.html">mixins/signalable.js</a>, <a href="mixins_signalable.js.html#line238">line 238</a>
+</div>
+
+  </div>
+  
+  
+  <div class="description">
+      <p>A hash of signals to create automatically. Each definition consists of a name for the signal as the key
+and then a hash of options (nullable) for each signal</p>
+  </div>
+  
+  
+  <!--
+  
+      <h5>Type:</h5>
+      <ul>
+          <li>
+              
+{hash|function}
+          </li>
+      </ul>
+  
+  -->
+
+  
+
+
+  
+  
+  
+
+  
+
+
+
+
+</div>
+  
+  
+</section>
+
+
+
+<section class="methods">
+  
+  <h3 class="section-title" id="methods">
+  Methods
+</h3>
+  
+  
+    
+<!--LONGNAME: mixins/signalable#refreshSignals-->
+<div class="method ">
+
+  
+  
+      <h4 class="signature" id="refreshSignals">
+        <a class="permalink" href="#refreshSignals"></a>
+        <span class="signature__name">refreshSignals</span><!--
+        --><span class="signature__params"><span class="par">(</span><span class="par">)</span></span><span class="signature__returns"></span>
+        <!--<span class="signature__attribs"></span>-->
+      </h4>
+      
+      
+      
+  
+  
+  <div class="details-mini">
+    
+
+
+    
+
+<div class="source-links">
+  source: <a href="mixins_signalable.js.html">mixins/signalable.js</a>, <a href="mixins_signalable.js.html#line165">line 165</a>
+</div>
+
+  </div>
+  
+  
+  <div class="description">
+      <p>When you make a change to the signals hash after loading, then you can make it reload</p>
+  </div>
+  
+
+  
+
+  
+  
+  
+  
+  
+  
+  
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <!--
+  
+  -->
+  
+
+  
+  
+    
+
+
+
+  
+
+  
+  
+
+
+</div>
+  
+  
+</section>
+
+
+
+
+
+  
+  
+</article>
+
+<script>prettyPrint();</script>
+<!--<script src="scripts/linenumber.js"></script>-->
+</body>
+</html>

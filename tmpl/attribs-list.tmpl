@@ -1,0 +1,11 @@
+<?js
+var data = obj;
+var self = this;
+?>
+<?js if(data.attribsList && data.attribsList.length && data.attribsList.forEach){ ?>
+  <div class="attribs-list">
+    <ul><?js data.attribsList.forEach(function(a){ ?>
+        <li class="attrib-<?js= a ?>"><?js= a ?></li>
+    <?js }); ?></ul>
+  </div>
+<?js } ?>

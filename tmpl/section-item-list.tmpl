@@ -1,0 +1,23 @@
+<?js
+var items = obj.items;
+var id = obj.id;
+var title = obj.title;
+var self = this;
+if (items && items.length && items.forEach){
+?>
+<section class="<?js= id ?>">
+  
+  <?js= self.partial('section__title.tmpl', { id: id,  title: title })?>
+    
+  <ul><?js items.forEach(function(m){ ?>
+
+    <?js if(m.longname){ ?>
+      <li><?js= self.linkto(m.longname, m.name) ?></li>
+    <?js }else{ ?>
+      <li><?js= self.linkto(m) ?></li>
+    <?js } ?>
+
+  <?js }); ?></ul>
+  
+</section>
+<?js } ?>

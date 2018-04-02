@@ -2,9 +2,10 @@
     var data = obj;
     var self = this;
 ?>
-
+<?js console.log('hola') ?>
+<?js console.log(data.augments) ?>
 <?js if (data.augments && data.augments.length) { ?>
     <ul><?js data.augments.forEach(function(a) { ?>
-        <li><?js= self.linkto(a, a) ?></li>
+        <li><?js= self.linkto(a) ?></li>
     <?js }) ?></ul>
 <?js } ?>

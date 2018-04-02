@@ -1,8 +1,23 @@
 <?js
     var data = obj;
+    var doc = data.doc;
+    var self = this;
 ?>
-    <section>
-        <article>
-            <pre class="prettyprint source linenums"><code><?js= data.code ?></code></pre>
-        </article>
-    </section>
+<header>
+
+  <h1 class="article__title">
+    <small><?js= doc.kind ?></small>
+    <?js= (title+'').split('/').pop() ?>
+  </h1>
+
+  <div class="details-mini">
+    <?js= self.partial('source-links.tmpl', doc) ?>
+  </div>
+  
+</header>
+
+<section class="article__source">
+  <pre class="prettyprint source linenums">
+    <code><?js= doc.code ?></code>
+  </pre>
+</section>

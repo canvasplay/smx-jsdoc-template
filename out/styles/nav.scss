@@ -1,0 +1,97 @@
+/* NAVIGATION MENU */
+
+nav {
+  padding: 1em 2em;
+  border-right: 1px solid #ccc;
+  background: white;
+}
+
+nav h3 {
+  font-size: .8rem;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  font-weight: 700;
+  padding: 1.5rem 0 0.5rem;
+}
+
+nav ul,
+nav li{
+  display: block;
+}
+
+nav ul{
+  list-style-type: none;
+  margin: 0; padding: 0;
+}
+
+nav ul a,
+nav ul a:active {
+  display: inline-block;
+  margin: .1em 0;
+}
+
+
+/* apply sublevel style from 3rd */
+nav ul ul ul{
+  padding-left: 1em;
+  margin-bottom: .15em;
+  padding-bottom: .15em;
+  padding-top: .15em;
+  border-left: 1px solid #d8dcdf;
+}
+
+
+/* custom format name by kind */
+nav .member > a:before{ content:'.' }
+nav .function > a:before{ content:'#' }
+nav .event > a:before{ content:':' }
+nav .typedef > a:before{ content:'~' }
+
+/* custom style by kind */
+nav .event a,
+nav .function a,
+nav .typedef a,
+nav .member a{
+  color: #888;
+  font-size: .9em;
+}
+
+/* search highlighting */
+nav .hl{
+  color: #292205;
+  background: #fffc52;
+}
+
+nav form.search-form .form-group{
+  position: relative;
+  display: table;
+  margin: 1em -5%;
+  width: 110%;
+}
+    
+
+/* hide from 3rd level unless `searching` flag */
+nav:not(.--searching) ul ul ul{
+  display: none;
+}
+
+/* hide all list items unless 'is-match' flag */
+nav.--searching li{
+  display: none;
+}
+nav.--searching li.--is-match{
+  display: block;
+}
+
+/* show first level contents if heading (link or title) is a match */
+nav.--searching > ul > li.--is-match > .--is-match:first-child + ul > li{
+  display: block;
+}
+nav.--searching > ul > li.--is-match > .--is-match:first-child + ul > li ul{
+  display: none;
+}
+
+/* always show tutorials tree unless `searching` flag */
+nav:not(.--searching) li.tutorial ul{
+  display: block;
+}

@@ -1,0 +1,19 @@
+<?js
+var typedefs = obj;
+var self = this;
+if (typedefs && typedefs.length && typedefs.forEach) {
+?>
+<section class="typedefs">
+
+  <?js= self.partial('section__title.tmpl', { id: 'typedefs',  title: 'Type Definitions' })?>
+  
+  <?js typedefs.forEach(function(e) { ?>
+    <?js if (e.signature){ ?>
+      <?js= self.partial('method.tmpl', e) ?>
+    <?js }else { ?>
+      <?js= self.partial('member.tmpl', e) ?>
+    <?js } ?>
+  <?js }); ?>
+  
+</section>
+<?js } ?>

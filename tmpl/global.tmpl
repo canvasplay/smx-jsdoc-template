@@ -1,0 +1,52 @@
+<?js
+    var data = obj;
+    var doc = data.doc;
+    var self = this;
+?>
+
+<header>
+  
+  <h1 class="article__title">
+    <small><?js= doc.kind ?></small>
+    <?js= title ?>
+  </h1>
+
+</header>
+
+
+<?js
+  var mixins = self.find({kind: 'mixin', memberof: {isUndefined: true} });
+  if (mixins && mixins.length) {
+?>
+<section id="Mixins" class="article__mixins">
+  
+  <?js= self.partial('section__title.tmpl', { id: 'Mixins',  title: 'Mixins' })?>
+  
+  <ul><?js mixins.forEach(function(m) { ?>
+      <li><?js= self.linkto(m.longname, m.name) ?></li>
+  <?js }); ?></ul>
+  
+</section>
+<?js } ?>
+
+
+<?js
+  var members = self.find({kind: 'member', memberof: {isUndefined: true} });
+  // symbols that are assigned to module.exports are not globals, even though they're not a memberof anything
+  if (members && members.length && members.forEach) {
+    members = members.filter(function(m) {
+        return m.longname && m.longname.indexOf('module:') !== 0;
+    });
+  }
+
+  var methods = self.find({kind: 'function', memberof: {isUndefined: true} });
+  var events = self.find({kind: 'event', memberof: {isUndefined: true} });
+  var typedefs = self.find({kind: 'typedef', memberof: {isUndefined: true} });
+  var examples = doc.examples;
+?>
+
+<?js= self.partial('section-members.tmpl', members) ?>
+<?js= self.partial('section-methods.tmpl', methods) ?>
+<?js= self.partial('section-events.tmpl', events) ?>
+<?js= self.partial('section-typedefs.tmpl', typedefs) ?>
+<?js= self.partial('section-examples.tmpl', examples) ?>

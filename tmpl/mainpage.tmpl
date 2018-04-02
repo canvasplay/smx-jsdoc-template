@@ -1,14 +1,42 @@
 <?js
 var data = obj;
+var doc = data.doc;
 var self = this;
 ?>
 
-<?js if (data.kind === 'package') { ?>
-    <h3><?js= data.name ?> <?js= data.version ?></h3>
-<?js } ?>
+<!--
+<header>
+  
+  <h1 class="article__title">
+    <small><?js= doc.kind ?></small>
+    <?js= title ?>
+  </h1>
 
-<?js if (data.readme) { ?>
-    <!--<section>-->
-        <article><?js= data.readme ?></article>
-    <!--</section>-->
+  <?js var hasAncestors = (doc.ancestors && doc.ancestors.length) ?>
+  <?js var hasVariation = (doc.variation) ?>
+
+  <?js if(hasAncestors || hasVariation){ ?>
+  <h2 class="article__path">
+
+    <?js if (doc.ancestors && doc.ancestors.length) { ?>
+      <span class="ancestors"><?js= doc.ancestors.join('') ?></span>
+    <?js } ?>
+
+    <?js= doc.name ?>
+
+    <?js if (doc.variation) { ?>
+      <sup class="variation"><?js= doc.variation ?></sup>
+    <?js } ?>
+
+  </h2>
+  <?js } ?>
+
+  <?js= self.partial('source-links.tmpl', doc) ?>
+  
+</header>
+-->
+<?js if (doc.readme) { ?>
+<section class="article__readme">
+  <?js= doc.readme ?>
+</section>
 <?js } ?>

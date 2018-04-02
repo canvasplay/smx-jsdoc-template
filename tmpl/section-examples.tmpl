@@ -1,0 +1,20 @@
+<?js
+var examples = obj;
+var self = this;
+if (examples && examples.length && examples.forEach) {
+?>
+<section class="examples">
+
+  <?js= self.partial('section__title.tmpl', { id: 'examples',  title: (examples.length>1)? 'Examples' : 'Example' })?>
+
+  <?js examples.forEach(function(example) { ?>
+  
+    <?js if(example.caption){ ?>
+        <p class="code-caption"><?js= example.caption ?></p>
+    <?js } ?>
+    <pre class="prettyprint"><code><?js= self.htmlsafe(example.code) ?></code></pre>
+
+  <?js }) ?>
+
+</section>
+<?js } ?>
